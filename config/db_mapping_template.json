@@ -1,0 +1,3285 @@
+{
+  "version": 1,
+  "notes": "Fill this template manually, then save as config/db_mapping.json.",
+  "candidate_tables": [
+    {
+      "schema": "public",
+      "table": "balance_sheets",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "report_date",
+          "data_type": "date"
+        },
+        {
+          "column": "report_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "notice_date",
+          "data_type": "date"
+        },
+        {
+          "column": "currency",
+          "data_type": "character varying"
+        },
+        {
+          "column": "total_assets",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_liabilities",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_equity",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_parent_equity",
+          "data_type": "numeric"
+        },
+        {
+          "column": "minority_equity",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_current_assets",
+          "data_type": "numeric"
+        },
+        {
+          "column": "monetaryfunds",
+          "data_type": "numeric"
+        },
+        {
+          "column": "note_rece",
+          "data_type": "numeric"
+        },
+        {
+          "column": "accounts_rece",
+          "data_type": "numeric"
+        },
+        {
+          "column": "other_rece",
+          "data_type": "numeric"
+        },
+        {
+          "column": "prepayment",
+          "data_type": "numeric"
+        },
+        {
+          "column": "inventory",
+          "data_type": "numeric"
+        },
+        {
+          "column": "contract_asset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "other_current_asset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_current_liab",
+          "data_type": "numeric"
+        },
+        {
+          "column": "short_loan",
+          "data_type": "numeric"
+        },
+        {
+          "column": "note_payable",
+          "data_type": "numeric"
+        },
+        {
+          "column": "accounts_payable",
+          "data_type": "numeric"
+        },
+        {
+          "column": "advance_receipts",
+          "data_type": "numeric"
+        },
+        {
+          "column": "contract_liab",
+          "data_type": "numeric"
+        },
+        {
+          "column": "other_payable",
+          "data_type": "numeric"
+        },
+        {
+          "column": "payable_staff",
+          "data_type": "numeric"
+        },
+        {
+          "column": "payable_taxes",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_noncurrent_assets",
+          "data_type": "numeric"
+        },
+        {
+          "column": "fixed_asset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "cip",
+          "data_type": "numeric"
+        },
+        {
+          "column": "intangible_asset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "goodwill",
+          "data_type": "numeric"
+        },
+        {
+          "column": "long_equity_invest",
+          "data_type": "numeric"
+        },
+        {
+          "column": "invest_realestate",
+          "data_type": "numeric"
+        },
+        {
+          "column": "develop_expenditure",
+          "data_type": "numeric"
+        },
+        {
+          "column": "fvtpl_finasset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "available_sale_finasset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "hold_maturity_invest",
+          "data_type": "numeric"
+        },
+        {
+          "column": "amortize_cost_finasset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "fvtoci_finasset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "other_equity_invest",
+          "data_type": "numeric"
+        },
+        {
+          "column": "derive_finasset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_noncurrent_liab",
+          "data_type": "numeric"
+        },
+        {
+          "column": "long_payable",
+          "data_type": "numeric"
+        },
+        {
+          "column": "bond_payable",
+          "data_type": "numeric"
+        },
+        {
+          "column": "lease_liab",
+          "data_type": "numeric"
+        },
+        {
+          "column": "defer_tax_liab",
+          "data_type": "numeric"
+        },
+        {
+          "column": "defer_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "non_current_liab_1year",
+          "data_type": "numeric"
+        },
+        {
+          "column": "defer_tax_asset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "defer_income_1year",
+          "data_type": "numeric"
+        },
+        {
+          "column": "share_capital",
+          "data_type": "numeric"
+        },
+        {
+          "column": "capital_reserve",
+          "data_type": "numeric"
+        },
+        {
+          "column": "surplus_reserve",
+          "data_type": "numeric"
+        },
+        {
+          "column": "unassign_rprofit",
+          "data_type": "numeric"
+        },
+        {
+          "column": "other_compre_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "treasury_shares",
+          "data_type": "numeric"
+        },
+        {
+          "column": "perpetual_bond",
+          "data_type": "numeric"
+        },
+        {
+          "column": "preferred_shares",
+          "data_type": "numeric"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "cash_flow_sheets",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "report_date",
+          "data_type": "date"
+        },
+        {
+          "column": "report_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "notice_date",
+          "data_type": "date"
+        },
+        {
+          "column": "currency",
+          "data_type": "character varying"
+        },
+        {
+          "column": "sales_services",
+          "data_type": "numeric"
+        },
+        {
+          "column": "receive_tax_refund",
+          "data_type": "numeric"
+        },
+        {
+          "column": "receive_other_operate",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_operate_inflow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "buy_services",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pay_staff_cash",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pay_all_tax",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pay_other_operate",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_operate_outflow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "netcash_operate",
+          "data_type": "numeric"
+        },
+        {
+          "column": "withdraw_invest",
+          "data_type": "numeric"
+        },
+        {
+          "column": "receive_invest_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "disposal_long_asset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_invest_inflow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "construct_long_asset",
+          "data_type": "numeric"
+        },
+        {
+          "column": "invest_pay_cash",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_invest_outflow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "netcash_invest",
+          "data_type": "numeric"
+        },
+        {
+          "column": "accept_invest_cash",
+          "data_type": "numeric"
+        },
+        {
+          "column": "receive_loan_cash",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_finance_inflow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pay_debt_cash",
+          "data_type": "numeric"
+        },
+        {
+          "column": "assign_dividend_porfit",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_finance_outflow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "netcash_finance",
+          "data_type": "numeric"
+        },
+        {
+          "column": "cce_add",
+          "data_type": "numeric"
+        },
+        {
+          "column": "begin_cce",
+          "data_type": "numeric"
+        },
+        {
+          "column": "end_cce",
+          "data_type": "numeric"
+        },
+        {
+          "column": "rate_change_effect",
+          "data_type": "numeric"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "companies",
+      "columns": [
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "name_en",
+          "data_type": "character varying"
+        },
+        {
+          "column": "short_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "market_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "ticker",
+          "data_type": "character varying"
+        },
+        {
+          "column": "exchange",
+          "data_type": "character varying"
+        },
+        {
+          "column": "industry",
+          "data_type": "character varying"
+        },
+        {
+          "column": "founded_date",
+          "data_type": "date"
+        },
+        {
+          "column": "headquarters",
+          "data_type": "character varying"
+        },
+        {
+          "column": "website",
+          "data_type": "character varying"
+        },
+        {
+          "column": "description",
+          "data_type": "text"
+        },
+        {
+          "column": "employee_count",
+          "data_type": "integer"
+        },
+        {
+          "column": "is_active",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "name_embedding",
+          "data_type": "USER-DEFINED"
+        },
+        {
+          "column": "embedding_model",
+          "data_type": "character varying"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "company_aliases",
+      "columns": [
+        {
+          "column": "alias_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "alias_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "alias_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "is_active",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "company_segment_map",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "segment_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "core_business_ratio",
+          "data_type": "numeric"
+        },
+        {
+          "column": "is_primary",
+          "data_type": "boolean"
+        },
+        {
+          "column": "start_date",
+          "data_type": "date"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "ratio_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "ratio_evidence",
+          "data_type": "text"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "crawler_task",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "bigint"
+        },
+        {
+          "column": "task_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "task_status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "start_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "end_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "cfg",
+          "data_type": "text"
+        },
+        {
+          "column": "cache",
+          "data_type": "text"
+        },
+        {
+          "column": "extra",
+          "data_type": "text"
+        },
+        {
+          "column": "create_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "update_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "delete_time",
+          "data_type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "daily_market_summary",
+      "columns": [
+        {
+          "column": "summary_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "summary_date",
+          "data_type": "date"
+        },
+        {
+          "column": "market_overview",
+          "data_type": "text"
+        },
+        {
+          "column": "recommendation_summary",
+          "data_type": "text"
+        },
+        {
+          "column": "total_signals",
+          "data_type": "integer"
+        },
+        {
+          "column": "total_analyzed",
+          "data_type": "integer"
+        },
+        {
+          "column": "total_recommended",
+          "data_type": "integer"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "data_lineage",
+      "columns": [
+        {
+          "column": "lineage_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "source_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "target_table",
+          "data_type": "character varying"
+        },
+        {
+          "column": "target_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "processing_steps",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "extracted_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "created_by",
+          "data_type": "character varying"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "data_sources",
+      "columns": [
+        {
+          "column": "source_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "source_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "source_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "source_url",
+          "data_type": "character varying"
+        },
+        {
+          "column": "publish_date",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "dim_industry_categories_sw",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "index_code",
+          "data_type": "character varying"
+        },
+        {
+          "column": "industry_code",
+          "data_type": "character varying"
+        },
+        {
+          "column": "level",
+          "data_type": "character varying"
+        },
+        {
+          "column": "industry_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "parent_code",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "document_chunks",
+      "columns": [
+        {
+          "column": "chunk_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "document_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "content",
+          "data_type": "text"
+        },
+        {
+          "column": "content_length",
+          "data_type": "integer"
+        },
+        {
+          "column": "chunk_index",
+          "data_type": "integer"
+        },
+        {
+          "column": "document_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "source_url",
+          "data_type": "character varying"
+        },
+        {
+          "column": "publish_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "source_file_path",
+          "data_type": "character varying"
+        },
+        {
+          "column": "embedding",
+          "data_type": "USER-DEFINED"
+        },
+        {
+          "column": "embedding_model",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "documents",
+      "columns": [
+        {
+          "column": "document_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "title",
+          "data_type": "character varying"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "document_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "source_url",
+          "data_type": "character varying"
+        },
+        {
+          "column": "source_file_path",
+          "data_type": "character varying"
+        },
+        {
+          "column": "publish_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "author",
+          "data_type": "character varying"
+        },
+        {
+          "column": "summary",
+          "data_type": "text"
+        },
+        {
+          "column": "keywords",
+          "data_type": "ARRAY"
+        },
+        {
+          "column": "total_chunks",
+          "data_type": "integer"
+        },
+        {
+          "column": "total_length",
+          "data_type": "integer"
+        },
+        {
+          "column": "data_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "event_signals_feedback",
+      "columns": [
+        {
+          "column": "signal_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "event_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "trigger_event",
+          "data_type": "text"
+        },
+        {
+          "column": "event_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "event_publish_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "core_entities",
+          "data_type": "ARRAY"
+        },
+        {
+          "column": "ai_impact_path",
+          "data_type": "text"
+        },
+        {
+          "column": "ai_impact_path_json",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "ai_rating",
+          "data_type": "integer"
+        },
+        {
+          "column": "ai_analysis",
+          "data_type": "text"
+        },
+        {
+          "column": "ai_confidence",
+          "data_type": "numeric"
+        },
+        {
+          "column": "expert_rating",
+          "data_type": "integer"
+        },
+        {
+          "column": "expert_comment",
+          "data_type": "text"
+        },
+        {
+          "column": "expert_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "reviewed_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "model_version",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trained_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "training_job_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "fact_index_daily",
+      "columns": [
+        {
+          "column": "index_code",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "date"
+        },
+        {
+          "column": "pre_close",
+          "data_type": "numeric"
+        },
+        {
+          "column": "open",
+          "data_type": "numeric"
+        },
+        {
+          "column": "high",
+          "data_type": "numeric"
+        },
+        {
+          "column": "low",
+          "data_type": "numeric"
+        },
+        {
+          "column": "close",
+          "data_type": "numeric"
+        },
+        {
+          "column": "volume",
+          "data_type": "numeric"
+        },
+        {
+          "column": "amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pct_chg",
+          "data_type": "numeric"
+        },
+        {
+          "column": "data_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "fact_lhb_tx_daily",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "date"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "seat_name",
+          "data_type": "text"
+        },
+        {
+          "column": "buy_amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "buy_rate",
+          "data_type": "numeric"
+        },
+        {
+          "column": "sell_amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "sell_rate",
+          "data_type": "numeric"
+        },
+        {
+          "column": "net_amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "is_buy",
+          "data_type": "boolean"
+        },
+        {
+          "column": "reason",
+          "data_type": "text"
+        },
+        {
+          "column": "data_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "financial_statements",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "report_date",
+          "data_type": "date"
+        },
+        {
+          "column": "report_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "fiscal_year",
+          "data_type": "integer"
+        },
+        {
+          "column": "fiscal_quarter",
+          "data_type": "integer"
+        },
+        {
+          "column": "revenue",
+          "data_type": "numeric"
+        },
+        {
+          "column": "revenue_growth",
+          "data_type": "numeric"
+        },
+        {
+          "column": "net_profit",
+          "data_type": "numeric"
+        },
+        {
+          "column": "net_profit_growth",
+          "data_type": "numeric"
+        },
+        {
+          "column": "gross_margin",
+          "data_type": "numeric"
+        },
+        {
+          "column": "net_margin",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_assets",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_liabilities",
+          "data_type": "numeric"
+        },
+        {
+          "column": "equity",
+          "data_type": "numeric"
+        },
+        {
+          "column": "eps",
+          "data_type": "numeric"
+        },
+        {
+          "column": "roe",
+          "data_type": "numeric"
+        },
+        {
+          "column": "roa",
+          "data_type": "numeric"
+        },
+        {
+          "column": "debt_ratio",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pe_ratio",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pb_ratio",
+          "data_type": "numeric"
+        },
+        {
+          "column": "ps_ratio",
+          "data_type": "numeric"
+        },
+        {
+          "column": "free_cash_flow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "operating_cash_flow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "investing_cash_flow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "financing_cash_flow",
+          "data_type": "numeric"
+        },
+        {
+          "column": "dividend_per_share",
+          "data_type": "numeric"
+        },
+        {
+          "column": "dividend_yield",
+          "data_type": "numeric"
+        },
+        {
+          "column": "data_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "is_verified",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "graph_build_jobs",
+      "columns": [
+        {
+          "column": "job_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "job_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "industry_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "start_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "end_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "document_count",
+          "data_type": "integer"
+        },
+        {
+          "column": "documents_processed",
+          "data_type": "integer"
+        },
+        {
+          "column": "entities_recognized",
+          "data_type": "integer"
+        },
+        {
+          "column": "relations_extracted",
+          "data_type": "integer"
+        },
+        {
+          "column": "segments_mapped",
+          "data_type": "integer"
+        },
+        {
+          "column": "segments_pending_review",
+          "data_type": "integer"
+        },
+        {
+          "column": "is_incremental",
+          "data_type": "boolean"
+        },
+        {
+          "column": "auto_map_segments",
+          "data_type": "boolean"
+        },
+        {
+          "column": "start_date",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "end_date",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "error_message",
+          "data_type": "text"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "graph_change_logs",
+      "columns": [
+        {
+          "column": "log_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "version_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "table_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "record_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "action",
+          "data_type": "character varying"
+        },
+        {
+          "column": "old_value",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "new_value",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "changed_by",
+          "data_type": "character varying"
+        },
+        {
+          "column": "changed_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "reason",
+          "data_type": "text"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "graph_versions",
+      "columns": [
+        {
+          "column": "version_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "version_number",
+          "data_type": "character varying"
+        },
+        {
+          "column": "description",
+          "data_type": "text"
+        },
+        {
+          "column": "change_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "change_count",
+          "data_type": "integer"
+        },
+        {
+          "column": "created_by",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "is_active",
+          "data_type": "boolean"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "industries",
+      "columns": [
+        {
+          "column": "industry_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "description",
+          "data_type": "text"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "industry_segments",
+      "columns": [
+        {
+          "column": "segment_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "industry_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "position_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "description",
+          "data_type": "text"
+        },
+        {
+          "column": "sort_order",
+          "data_type": "integer"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "name_embedding",
+          "data_type": "USER-DEFINED"
+        },
+        {
+          "column": "description_embedding",
+          "data_type": "USER-DEFINED"
+        },
+        {
+          "column": "embedding_model",
+          "data_type": "character varying"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "login_logs",
+      "columns": [
+        {
+          "column": "log_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "user_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "username",
+          "data_type": "character varying"
+        },
+        {
+          "column": "login_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "ip_address",
+          "data_type": "character varying"
+        },
+        {
+          "column": "user_agent",
+          "data_type": "text"
+        },
+        {
+          "column": "login_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "location",
+          "data_type": "character varying"
+        },
+        {
+          "column": "device_info",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "success",
+          "data_type": "boolean"
+        },
+        {
+          "column": "failure_reason",
+          "data_type": "text"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "map_company_industry_sw",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "l1_index_code",
+          "data_type": "character varying"
+        },
+        {
+          "column": "l2_index_code",
+          "data_type": "character varying"
+        },
+        {
+          "column": "l3_index_code",
+          "data_type": "character varying"
+        },
+        {
+          "column": "in_date",
+          "data_type": "character varying"
+        },
+        {
+          "column": "out_date",
+          "data_type": "character varying"
+        },
+        {
+          "column": "is_new",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "permissions",
+      "columns": [
+        {
+          "column": "permission_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "permission_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "resource_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "action",
+          "data_type": "character varying"
+        },
+        {
+          "column": "description",
+          "data_type": "text"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "profit_sheets",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "report_date",
+          "data_type": "date"
+        },
+        {
+          "column": "report_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "notice_date",
+          "data_type": "date"
+        },
+        {
+          "column": "total_operate_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "operate_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "operate_cost",
+          "data_type": "numeric"
+        },
+        {
+          "column": "operate_profit",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_profit",
+          "data_type": "numeric"
+        },
+        {
+          "column": "parent_netprofit",
+          "data_type": "numeric"
+        },
+        {
+          "column": "deduct_parent_netprofit",
+          "data_type": "numeric"
+        },
+        {
+          "column": "sale_expense",
+          "data_type": "numeric"
+        },
+        {
+          "column": "manage_expense",
+          "data_type": "numeric"
+        },
+        {
+          "column": "finance_expense",
+          "data_type": "numeric"
+        },
+        {
+          "column": "research_expense",
+          "data_type": "numeric"
+        },
+        {
+          "column": "invest_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "asset_impairment_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "credit_impairment_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "fairvalue_change_income",
+          "data_type": "numeric"
+        },
+        {
+          "column": "income_tax",
+          "data_type": "numeric"
+        },
+        {
+          "column": "net_profit",
+          "data_type": "numeric"
+        },
+        {
+          "column": "minority_interest",
+          "data_type": "numeric"
+        },
+        {
+          "column": "basic_eps",
+          "data_type": "numeric"
+        },
+        {
+          "column": "diluted_eps",
+          "data_type": "numeric"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "quality_check_jobs",
+      "columns": [
+        {
+          "column": "job_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "start_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "end_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "total_issues",
+          "data_type": "integer"
+        },
+        {
+          "column": "isolated_nodes",
+          "data_type": "integer"
+        },
+        {
+          "column": "chain_breaks",
+          "data_type": "integer"
+        },
+        {
+          "column": "outdated_relations",
+          "data_type": "integer"
+        },
+        {
+          "column": "invalid_relations",
+          "data_type": "integer"
+        },
+        {
+          "column": "incomplete_data",
+          "data_type": "integer"
+        },
+        {
+          "column": "error_message",
+          "data_type": "text"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "quality_check_logs",
+      "columns": [
+        {
+          "column": "log_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "check_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "entity_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "entity_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "issue_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "issue_description",
+          "data_type": "text"
+        },
+        {
+          "column": "severity",
+          "data_type": "character varying"
+        },
+        {
+          "column": "is_resolved",
+          "data_type": "boolean"
+        },
+        {
+          "column": "resolved_by",
+          "data_type": "character varying"
+        },
+        {
+          "column": "resolved_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "resolution_notes",
+          "data_type": "text"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "review_requests",
+      "columns": [
+        {
+          "column": "review_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "review_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "entity_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "entity_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "action",
+          "data_type": "character varying"
+        },
+        {
+          "column": "data_before",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "data_after",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "submitter_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "submitter_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "reviewer_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "reviewer_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "auto_check_result",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "review_comment",
+          "data_type": "text"
+        },
+        {
+          "column": "review_result",
+          "data_type": "character varying"
+        },
+        {
+          "column": "submitted_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "reviewed_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "role_permissions",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "role_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "permission_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "roles",
+      "columns": [
+        {
+          "column": "role_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "role_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "description",
+          "data_type": "text"
+        },
+        {
+          "column": "is_system_role",
+          "data_type": "boolean"
+        },
+        {
+          "column": "permissions",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "segment_reviews",
+      "columns": [
+        {
+          "column": "review_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "industry_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "suggested_segment_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "suggested_position_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "company_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "company_description",
+          "data_type": "text"
+        },
+        {
+          "column": "source_job_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_by",
+          "data_type": "character varying"
+        },
+        {
+          "column": "reviewed_by",
+          "data_type": "character varying"
+        },
+        {
+          "column": "reviewed_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "suggested_description",
+          "data_type": "text"
+        },
+        {
+          "column": "is_new_segment",
+          "data_type": "boolean"
+        },
+        {
+          "column": "existing_segment_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "review_comment",
+          "data_type": "text"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "stock_analysis_reports",
+      "columns": [
+        {
+          "column": "report_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "analysis_date",
+          "data_type": "date"
+        },
+        {
+          "column": "investment_style",
+          "data_type": "character varying"
+        },
+        {
+          "column": "total_score",
+          "data_type": "numeric"
+        },
+        {
+          "column": "score_details",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "report_file_path",
+          "data_type": "character varying"
+        },
+        {
+          "column": "signal_sources",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "stock_block_trades",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "date"
+        },
+        {
+          "column": "trade_price_unadjust",
+          "data_type": "numeric"
+        },
+        {
+          "column": "volume_unadjust",
+          "data_type": "bigint"
+        },
+        {
+          "column": "amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "buyer_seat",
+          "data_type": "character varying"
+        },
+        {
+          "column": "seller_seat",
+          "data_type": "character varying"
+        },
+        {
+          "column": "close_price_unadjust",
+          "data_type": "numeric"
+        },
+        {
+          "column": "discount_rate",
+          "data_type": "numeric"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "stock_margins",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "date"
+        },
+        {
+          "column": "margin_balance",
+          "data_type": "numeric"
+        },
+        {
+          "column": "margin_buy_amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "margin_repay_amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "margin_net_buy",
+          "data_type": "numeric"
+        },
+        {
+          "column": "short_balance_vol",
+          "data_type": "numeric"
+        },
+        {
+          "column": "short_sell_vol",
+          "data_type": "numeric"
+        },
+        {
+          "column": "short_repay_vol",
+          "data_type": "numeric"
+        },
+        {
+          "column": "short_balance",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_balance",
+          "data_type": "numeric"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "stock_prices",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "date"
+        },
+        {
+          "column": "open_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "high_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "low_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "close_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "volume",
+          "data_type": "bigint"
+        },
+        {
+          "column": "turnover",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pe_ttm",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pb_lf",
+          "data_type": "numeric"
+        },
+        {
+          "column": "dividend_yield",
+          "data_type": "numeric"
+        },
+        {
+          "column": "change_pct",
+          "data_type": "numeric"
+        },
+        {
+          "column": "ma_5",
+          "data_type": "numeric"
+        },
+        {
+          "column": "ma_10",
+          "data_type": "numeric"
+        },
+        {
+          "column": "ma_20",
+          "data_type": "numeric"
+        },
+        {
+          "column": "ma_60",
+          "data_type": "numeric"
+        },
+        {
+          "column": "data_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "total_market_cap",
+          "data_type": "numeric"
+        },
+        {
+          "column": "circulating_market_cap",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_shares",
+          "data_type": "numeric"
+        },
+        {
+          "column": "ps_ratio",
+          "data_type": "numeric"
+        },
+        {
+          "column": "circulating_shares",
+          "data_type": "numeric"
+        },
+        {
+          "column": "amount",
+          "data_type": "numeric"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "stock_prices_history",
+      "columns": [
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "date"
+        },
+        {
+          "column": "pre_close",
+          "data_type": "numeric"
+        },
+        {
+          "column": "open_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "high_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "low_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "close_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "volume",
+          "data_type": "bigint"
+        },
+        {
+          "column": "amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "adj_factor",
+          "data_type": "numeric"
+        },
+        {
+          "column": "data_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "stock_prices_realtime",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "date"
+        },
+        {
+          "column": "pre_close",
+          "data_type": "numeric"
+        },
+        {
+          "column": "open_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "high_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "low_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "close_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "volume",
+          "data_type": "bigint"
+        },
+        {
+          "column": "amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "num",
+          "data_type": "bigint"
+        },
+        {
+          "column": "data_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "stock_valuations",
+      "columns": [
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "date"
+        },
+        {
+          "column": "turnover_rate",
+          "data_type": "numeric"
+        },
+        {
+          "column": "turnover_rate_free_float",
+          "data_type": "numeric"
+        },
+        {
+          "column": "volume_ratio",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pe",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pe_ttm",
+          "data_type": "numeric"
+        },
+        {
+          "column": "pb",
+          "data_type": "numeric"
+        },
+        {
+          "column": "ps",
+          "data_type": "numeric"
+        },
+        {
+          "column": "ps_ttm",
+          "data_type": "numeric"
+        },
+        {
+          "column": "dividend_yield_ratio",
+          "data_type": "numeric"
+        },
+        {
+          "column": "dividend_yield_ttm",
+          "data_type": "numeric"
+        },
+        {
+          "column": "total_share",
+          "data_type": "bigint"
+        },
+        {
+          "column": "floating_share",
+          "data_type": "bigint"
+        },
+        {
+          "column": "free_float_share",
+          "data_type": "bigint"
+        },
+        {
+          "column": "total_market_value",
+          "data_type": "numeric"
+        },
+        {
+          "column": "circulating_market_value",
+          "data_type": "numeric"
+        },
+        {
+          "column": "data_source",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "strategies",
+      "columns": [
+        {
+          "column": "strategy_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "strategy_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "description",
+          "data_type": "text"
+        },
+        {
+          "column": "parameters",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "is_active",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_by",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "strategy_signals",
+      "columns": [
+        {
+          "column": "signal_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "strategy_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "strategy_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "signal_date",
+          "data_type": "date"
+        },
+        {
+          "column": "signal_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "signal_reason",
+          "data_type": "text"
+        },
+        {
+          "column": "signal_metadata",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "is_processed",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "strategy_stocks",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "strategy_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "buy_price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "buy_date",
+          "data_type": "date"
+        },
+        {
+          "column": "quantity",
+          "data_type": "numeric"
+        },
+        {
+          "column": "is_holding",
+          "data_type": "boolean"
+        },
+        {
+          "column": "added_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "strategy_trades",
+      "columns": [
+        {
+          "column": "trade_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "strategy_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "price",
+          "data_type": "numeric"
+        },
+        {
+          "column": "quantity",
+          "data_type": "numeric"
+        },
+        {
+          "column": "amount",
+          "data_type": "numeric"
+        },
+        {
+          "column": "reason",
+          "data_type": "character varying"
+        },
+        {
+          "column": "trade_date",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "supply_chain_edges",
+      "columns": [
+        {
+          "column": "edge_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "source_company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "target_company_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "relation_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "detail",
+          "data_type": "text"
+        },
+        {
+          "column": "confidence_score",
+          "data_type": "numeric"
+        },
+        {
+          "column": "source_url",
+          "data_type": "character varying"
+        },
+        {
+          "column": "start_date",
+          "data_type": "date"
+        },
+        {
+          "column": "end_date",
+          "data_type": "date"
+        },
+        {
+          "column": "is_active",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "evidence",
+          "data_type": "text"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "system_config",
+      "columns": [
+        {
+          "column": "config_key",
+          "data_type": "character varying"
+        },
+        {
+          "column": "config_value",
+          "data_type": "text"
+        },
+        {
+          "column": "config_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "description",
+          "data_type": "text"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "training_jobs",
+      "columns": [
+        {
+          "column": "job_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "job_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "base_model",
+          "data_type": "character varying"
+        },
+        {
+          "column": "training_method",
+          "data_type": "character varying"
+        },
+        {
+          "column": "sample_count",
+          "data_type": "integer"
+        },
+        {
+          "column": "hyperparameters",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "start_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "end_time",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "model_output_path",
+          "data_type": "character varying"
+        },
+        {
+          "column": "metrics",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "error_message",
+          "data_type": "text"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "training_samples",
+      "columns": [
+        {
+          "column": "sample_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "signal_id",
+          "data_type": "integer"
+        },
+        {
+          "column": "prompt",
+          "data_type": "text"
+        },
+        {
+          "column": "completion",
+          "data_type": "text"
+        },
+        {
+          "column": "sample_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "quality_score",
+          "data_type": "numeric"
+        },
+        {
+          "column": "is_used",
+          "data_type": "boolean"
+        },
+        {
+          "column": "used_in_training_job",
+          "data_type": "character varying"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "user_roles",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "integer"
+        },
+        {
+          "column": "user_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "role_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "assigned_by",
+          "data_type": "uuid"
+        },
+        {
+          "column": "assigned_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "expires_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "is_active",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "user_sessions",
+      "columns": [
+        {
+          "column": "session_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "user_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "token_hash",
+          "data_type": "character varying"
+        },
+        {
+          "column": "refresh_token_hash",
+          "data_type": "character varying"
+        },
+        {
+          "column": "ip_address",
+          "data_type": "character varying"
+        },
+        {
+          "column": "user_agent",
+          "data_type": "text"
+        },
+        {
+          "column": "device_info",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "is_active",
+          "data_type": "boolean"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "expires_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "last_activity_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "users",
+      "columns": [
+        {
+          "column": "user_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "username",
+          "data_type": "character varying"
+        },
+        {
+          "column": "email",
+          "data_type": "character varying"
+        },
+        {
+          "column": "password_hash",
+          "data_type": "character varying"
+        },
+        {
+          "column": "full_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "phone",
+          "data_type": "character varying"
+        },
+        {
+          "column": "avatar_url",
+          "data_type": "character varying"
+        },
+        {
+          "column": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "email_verified",
+          "data_type": "boolean"
+        },
+        {
+          "column": "phone_verified",
+          "data_type": "boolean"
+        },
+        {
+          "column": "last_login_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "last_login_ip",
+          "data_type": "character varying"
+        },
+        {
+          "column": "login_count",
+          "data_type": "integer"
+        },
+        {
+          "column": "failed_login_count",
+          "data_type": "integer"
+        },
+        {
+          "column": "locked_until",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "password_changed_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "must_change_password",
+          "data_type": "boolean"
+        },
+        {
+          "column": "timezone",
+          "data_type": "character varying"
+        },
+        {
+          "column": "language",
+          "data_type": "character varying"
+        },
+        {
+          "column": "preferences",
+          "data_type": "jsonb"
+        },
+        {
+          "column": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column": "updated_at",
+          "data_type": "timestamp without time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "v_chain_completeness",
+      "columns": [
+        {
+          "column": "industry_id",
+          "data_type": "character varying"
+        },
+        {
+          "column": "industry_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "total_segments",
+          "data_type": "bigint"
+        },
+        {
+          "column": "upstream_count",
+          "data_type": "bigint"
+        },
+        {
+          "column": "midstream_count",
+          "data_type": "bigint"
+        },
+        {
+          "column": "downstream_count",
+          "data_type": "bigint"
+        },
+        {
+          "column": "total_companies",
+          "data_type": "bigint"
+        },
+        {
+          "column": "upstream_companies",
+          "data_type": "bigint"
+        },
+        {
+          "column": "midstream_companies",
+          "data_type": "bigint"
+        },
+        {
+          "column": "downstream_companies",
+          "data_type": "bigint"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "v_quality_metrics",
+      "columns": [
+        {
+          "column": "total_companies",
+          "data_type": "bigint"
+        },
+        {
+          "column": "total_relations",
+          "data_type": "bigint"
+        },
+        {
+          "column": "total_industries",
+          "data_type": "bigint"
+        },
+        {
+          "column": "total_segments",
+          "data_type": "bigint"
+        },
+        {
+          "column": "isolated_companies",
+          "data_type": "bigint"
+        },
+        {
+          "column": "outdated_relations",
+          "data_type": "bigint"
+        },
+        {
+          "column": "pending_reviews",
+          "data_type": "bigint"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "v_relation_statistics",
+      "columns": [
+        {
+          "column": "relation_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "total_count",
+          "data_type": "bigint"
+        },
+        {
+          "column": "avg_confidence",
+          "data_type": "numeric"
+        },
+        {
+          "column": "max_confidence",
+          "data_type": "numeric"
+        },
+        {
+          "column": "min_confidence",
+          "data_type": "numeric"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "vane_data_task",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "user_id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "task_type",
+          "data_type": "character varying"
+        },
+        {
+          "column": "task_status",
+          "data_type": "character varying"
+        },
+        {
+          "column": "start_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "end_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "cfg",
+          "data_type": "text"
+        },
+        {
+          "column": "cache",
+          "data_type": "text"
+        },
+        {
+          "column": "extra",
+          "data_type": "text"
+        },
+        {
+          "column": "create_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "update_time",
+          "data_type": "timestamp with time zone"
+        }
+      ]
+    },
+    {
+      "schema": "public",
+      "table": "vane_data_user",
+      "columns": [
+        {
+          "column": "id",
+          "data_type": "uuid"
+        },
+        {
+          "column": "create_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "update_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "delete_time",
+          "data_type": "timestamp with time zone"
+        },
+        {
+          "column": "del_state",
+          "data_type": "bigint"
+        },
+        {
+          "column": "user_name",
+          "data_type": "character varying"
+        },
+        {
+          "column": "hash_pwd",
+          "data_type": "character varying"
+        }
+      ]
+    }
+  ],
+  "endpoints": {
+    "universe": {
+      "enabled": false
+    },
+    "price": {
+      "enabled": false,
+      "adjustment": "unknown",
+      "required_fields": {
+        "close": ""
+      },
+      "optional_fields": {
+        "amount": "",
+        "turnover": ""
+      },
+      "units": {
+        "close": {
+          "multiplier": 1,
+          "unit": "database_native"
+        },
+        "amount": {
+          "multiplier": 1,
+          "unit": "database_native"
+        },
+        "turnover": {
+          "multiplier": 1,
+          "unit": "database_native"
+        }
+      }
+    },
+    "cashflow": {
+      "enabled": false
+    },
+    "profit": {
+      "enabled": false
+    },
+    "moneyflow": {
+      "enabled": false
+    }
+  }
+}

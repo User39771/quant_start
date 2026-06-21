@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "notes": "Phase 1 explicit mapping: universe + price only. Do not store database credentials here.",
+  "endpoints": {
+    "universe": {
+      "enabled": true,
+      "schema": "public",
+      "table": "companies",
+      "symbol_column": "company_id",
+      "required_fields": {
+        "name": "short_name"
+      },
+      "optional_fields": {
+        "industry": "industry"
+      },
+      "units": {
+        "name": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "industry": {
+          "unit": "text",
+          "multiplier": 1
+        }
+      }
+    },
+    "price": {
+      "enabled": true,
+      "schema": "public",
+      "table": "stock_prices",
+      "symbol_column": "company_id",
+      "date_column": "trade_date",
+      "updated_at_column": "updated_at",
+      "adjustment": "unknown",
+      "required_fields": {
+        "close": "close_price"
+      },
+      "optional_fields": {
+        "amount": "amount",
+        "high": "high_price",
+        "low": "low_price",
+        "turnover": "turnover",
+        "total_market_cap": "total_market_cap",
+        "circulating_market_cap": "circulating_market_cap"
+      },
+      "units": {
+        "close": {
+          "unit": "CNY/share",
+          "multiplier": 1
+        },
+        "amount": {
+          "unit": "CNY",
+          "multiplier": 1
+        },
+        "high": {
+          "unit": "CNY/share",
+          "multiplier": 1
+        },
+        "low": {
+          "unit": "CNY/share",
+          "multiplier": 1
+        },
+        "turnover": {
+          "unit": "database_native",
+          "multiplier": 1
+        },
+        "total_market_cap": {
+          "unit": "database_native",
+          "multiplier": 1
+        },
+        "circulating_market_cap": {
+          "unit": "database_native",
+          "multiplier": 1
+        }
+      }
+    },
+    "cashflow": {
+      "enabled": true,
+      "schema": "public",
+      "table": "cash_flow_sheets",
+      "symbol_column": "company_id",
+      "report_date_column": "report_date",
+      "ann_date_column": "notice_date",
+      "updated_at_column": "updated_at",
+      "required_fields": {
+        "operating_cashflow": "netcash_operate"
+      },
+      "optional_fields": {},
+      "units": {
+        "operating_cashflow": {
+          "unit": "CNY",
+          "multiplier": 1
+        }
+      }
+    },
+    "profit": {
+      "enabled": true,
+      "schema": "public",
+      "table": "profit_sheets",
+      "symbol_column": "company_id",
+      "report_date_column": "report_date",
+      "ann_date_column": "notice_date",
+      "updated_at_column": "updated_at",
+      "required_fields": {
+        "revenue": "total_operate_income",
+        "parent_net_profit": "parent_netprofit"
+      },
+      "optional_fields": {},
+      "units": {
+        "revenue": {
+          "unit": "CNY",
+          "multiplier": 1
+        },
+        "parent_net_profit": {
+          "unit": "CNY",
+          "multiplier": 1
+        }
+      }
+    },
+    "moneyflow": {
+      "enabled": false
+    },
+    "industry_sw": {
+      "enabled": true,
+      "schema": "public",
+      "table": "map_company_industry_sw",
+      "symbol_column": "company_id",
+      "category_schema": "public",
+      "category_table": "dim_industry_categories_sw",
+      "category_code_column": "index_code",
+      "category_name_column": "industry_name",
+      "required_fields": {
+        "sw_l1_code": "l1_index_code",
+        "sw_l2_code": "l2_index_code",
+        "sw_l3_code": "l3_index_code",
+        "in_date": "in_date",
+        "out_date": "out_date"
+      },
+      "optional_fields": {
+        "sw_l1_name": "l1_industry_name",
+        "sw_l2_name": "l2_industry_name",
+        "sw_l3_name": "l3_industry_name",
+        "is_new": "is_new",
+        "updated_at": "updated_at"
+      },
+      "units": {
+        "sw_l1_code": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "sw_l2_code": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "sw_l3_code": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "sw_l1_name": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "sw_l2_name": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "sw_l3_name": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "in_date": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "out_date": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "is_new": {
+          "unit": "text",
+          "multiplier": 1
+        },
+        "updated_at": {
+          "unit": "text",
+          "multiplier": 1
+        }
+      }
+    }
+  }
+}

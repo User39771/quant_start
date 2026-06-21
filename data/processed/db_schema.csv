@@ -1,0 +1,730 @@
+﻿schema,table,column,data_type
+public,balance_sheets,id,integer
+public,balance_sheets,company_id,character varying
+public,balance_sheets,report_date,date
+public,balance_sheets,report_type,character varying
+public,balance_sheets,notice_date,date
+public,balance_sheets,currency,character varying
+public,balance_sheets,total_assets,numeric
+public,balance_sheets,total_liabilities,numeric
+public,balance_sheets,total_equity,numeric
+public,balance_sheets,total_parent_equity,numeric
+public,balance_sheets,minority_equity,numeric
+public,balance_sheets,total_current_assets,numeric
+public,balance_sheets,monetaryfunds,numeric
+public,balance_sheets,note_rece,numeric
+public,balance_sheets,accounts_rece,numeric
+public,balance_sheets,other_rece,numeric
+public,balance_sheets,prepayment,numeric
+public,balance_sheets,inventory,numeric
+public,balance_sheets,contract_asset,numeric
+public,balance_sheets,other_current_asset,numeric
+public,balance_sheets,total_current_liab,numeric
+public,balance_sheets,short_loan,numeric
+public,balance_sheets,note_payable,numeric
+public,balance_sheets,accounts_payable,numeric
+public,balance_sheets,advance_receipts,numeric
+public,balance_sheets,contract_liab,numeric
+public,balance_sheets,other_payable,numeric
+public,balance_sheets,payable_staff,numeric
+public,balance_sheets,payable_taxes,numeric
+public,balance_sheets,total_noncurrent_assets,numeric
+public,balance_sheets,fixed_asset,numeric
+public,balance_sheets,cip,numeric
+public,balance_sheets,intangible_asset,numeric
+public,balance_sheets,goodwill,numeric
+public,balance_sheets,long_equity_invest,numeric
+public,balance_sheets,invest_realestate,numeric
+public,balance_sheets,develop_expenditure,numeric
+public,balance_sheets,fvtpl_finasset,numeric
+public,balance_sheets,available_sale_finasset,numeric
+public,balance_sheets,hold_maturity_invest,numeric
+public,balance_sheets,amortize_cost_finasset,numeric
+public,balance_sheets,fvtoci_finasset,numeric
+public,balance_sheets,other_equity_invest,numeric
+public,balance_sheets,derive_finasset,numeric
+public,balance_sheets,total_noncurrent_liab,numeric
+public,balance_sheets,long_payable,numeric
+public,balance_sheets,bond_payable,numeric
+public,balance_sheets,lease_liab,numeric
+public,balance_sheets,defer_tax_liab,numeric
+public,balance_sheets,defer_income,numeric
+public,balance_sheets,non_current_liab_1year,numeric
+public,balance_sheets,defer_tax_asset,numeric
+public,balance_sheets,defer_income_1year,numeric
+public,balance_sheets,share_capital,numeric
+public,balance_sheets,capital_reserve,numeric
+public,balance_sheets,surplus_reserve,numeric
+public,balance_sheets,unassign_rprofit,numeric
+public,balance_sheets,other_compre_income,numeric
+public,balance_sheets,treasury_shares,numeric
+public,balance_sheets,perpetual_bond,numeric
+public,balance_sheets,preferred_shares,numeric
+public,balance_sheets,created_at,timestamp without time zone
+public,balance_sheets,updated_at,timestamp without time zone
+public,cash_flow_sheets,id,integer
+public,cash_flow_sheets,company_id,character varying
+public,cash_flow_sheets,report_date,date
+public,cash_flow_sheets,report_type,character varying
+public,cash_flow_sheets,notice_date,date
+public,cash_flow_sheets,currency,character varying
+public,cash_flow_sheets,sales_services,numeric
+public,cash_flow_sheets,receive_tax_refund,numeric
+public,cash_flow_sheets,receive_other_operate,numeric
+public,cash_flow_sheets,total_operate_inflow,numeric
+public,cash_flow_sheets,buy_services,numeric
+public,cash_flow_sheets,pay_staff_cash,numeric
+public,cash_flow_sheets,pay_all_tax,numeric
+public,cash_flow_sheets,pay_other_operate,numeric
+public,cash_flow_sheets,total_operate_outflow,numeric
+public,cash_flow_sheets,netcash_operate,numeric
+public,cash_flow_sheets,withdraw_invest,numeric
+public,cash_flow_sheets,receive_invest_income,numeric
+public,cash_flow_sheets,disposal_long_asset,numeric
+public,cash_flow_sheets,total_invest_inflow,numeric
+public,cash_flow_sheets,construct_long_asset,numeric
+public,cash_flow_sheets,invest_pay_cash,numeric
+public,cash_flow_sheets,total_invest_outflow,numeric
+public,cash_flow_sheets,netcash_invest,numeric
+public,cash_flow_sheets,accept_invest_cash,numeric
+public,cash_flow_sheets,receive_loan_cash,numeric
+public,cash_flow_sheets,total_finance_inflow,numeric
+public,cash_flow_sheets,pay_debt_cash,numeric
+public,cash_flow_sheets,assign_dividend_porfit,numeric
+public,cash_flow_sheets,total_finance_outflow,numeric
+public,cash_flow_sheets,netcash_finance,numeric
+public,cash_flow_sheets,cce_add,numeric
+public,cash_flow_sheets,begin_cce,numeric
+public,cash_flow_sheets,end_cce,numeric
+public,cash_flow_sheets,rate_change_effect,numeric
+public,cash_flow_sheets,created_at,timestamp without time zone
+public,cash_flow_sheets,updated_at,timestamp without time zone
+public,companies,company_id,character varying
+public,companies,name,character varying
+public,companies,name_en,character varying
+public,companies,short_name,character varying
+public,companies,market_type,character varying
+public,companies,ticker,character varying
+public,companies,exchange,character varying
+public,companies,industry,character varying
+public,companies,founded_date,date
+public,companies,headquarters,character varying
+public,companies,website,character varying
+public,companies,description,text
+public,companies,employee_count,integer
+public,companies,is_active,boolean
+public,companies,created_at,timestamp without time zone
+public,companies,updated_at,timestamp without time zone
+public,companies,name_embedding,USER-DEFINED
+public,companies,embedding_model,character varying
+public,company_aliases,alias_id,integer
+public,company_aliases,company_id,character varying
+public,company_aliases,alias_name,character varying
+public,company_aliases,alias_type,character varying
+public,company_aliases,is_active,boolean
+public,company_aliases,created_at,timestamp without time zone
+public,company_segment_map,id,integer
+public,company_segment_map,company_id,character varying
+public,company_segment_map,segment_id,character varying
+public,company_segment_map,core_business_ratio,numeric
+public,company_segment_map,is_primary,boolean
+public,company_segment_map,start_date,date
+public,company_segment_map,created_at,timestamp without time zone
+public,company_segment_map,updated_at,timestamp without time zone
+public,company_segment_map,ratio_source,character varying
+public,company_segment_map,ratio_evidence,text
+public,crawler_task,id,bigint
+public,crawler_task,task_type,character varying
+public,crawler_task,task_status,character varying
+public,crawler_task,start_time,timestamp with time zone
+public,crawler_task,end_time,timestamp with time zone
+public,crawler_task,cfg,text
+public,crawler_task,cache,text
+public,crawler_task,extra,text
+public,crawler_task,create_time,timestamp with time zone
+public,crawler_task,update_time,timestamp with time zone
+public,crawler_task,delete_time,timestamp with time zone
+public,daily_market_summary,summary_id,integer
+public,daily_market_summary,summary_date,date
+public,daily_market_summary,market_overview,text
+public,daily_market_summary,recommendation_summary,text
+public,daily_market_summary,total_signals,integer
+public,daily_market_summary,total_analyzed,integer
+public,daily_market_summary,total_recommended,integer
+public,daily_market_summary,created_at,timestamp without time zone
+public,data_lineage,lineage_id,integer
+public,data_lineage,source_id,integer
+public,data_lineage,target_table,character varying
+public,data_lineage,target_id,character varying
+public,data_lineage,processing_steps,jsonb
+public,data_lineage,extracted_at,timestamp without time zone
+public,data_lineage,created_by,character varying
+public,data_sources,source_id,integer
+public,data_sources,source_type,character varying
+public,data_sources,source_name,character varying
+public,data_sources,source_url,character varying
+public,data_sources,publish_date,timestamp without time zone
+public,data_sources,created_at,timestamp without time zone
+public,dim_industry_categories_sw,id,integer
+public,dim_industry_categories_sw,index_code,character varying
+public,dim_industry_categories_sw,industry_code,character varying
+public,dim_industry_categories_sw,level,character varying
+public,dim_industry_categories_sw,industry_name,character varying
+public,dim_industry_categories_sw,parent_code,character varying
+public,dim_industry_categories_sw,created_at,timestamp without time zone
+public,dim_industry_categories_sw,updated_at,timestamp without time zone
+public,document_chunks,chunk_id,uuid
+public,document_chunks,document_id,uuid
+public,document_chunks,company_id,character varying
+public,document_chunks,content,text
+public,document_chunks,content_length,integer
+public,document_chunks,chunk_index,integer
+public,document_chunks,document_type,character varying
+public,document_chunks,source_url,character varying
+public,document_chunks,publish_time,timestamp without time zone
+public,document_chunks,source_file_path,character varying
+public,document_chunks,embedding,USER-DEFINED
+public,document_chunks,embedding_model,character varying
+public,document_chunks,created_at,timestamp without time zone
+public,documents,document_id,uuid
+public,documents,title,character varying
+public,documents,company_id,character varying
+public,documents,document_type,character varying
+public,documents,source_url,character varying
+public,documents,source_file_path,character varying
+public,documents,publish_time,timestamp without time zone
+public,documents,author,character varying
+public,documents,summary,text
+public,documents,keywords,ARRAY
+public,documents,total_chunks,integer
+public,documents,total_length,integer
+public,documents,data_source,character varying
+public,documents,status,character varying
+public,documents,created_at,timestamp without time zone
+public,documents,updated_at,timestamp without time zone
+public,event_signals_feedback,signal_id,integer
+public,event_signals_feedback,event_id,uuid
+public,event_signals_feedback,trigger_event,text
+public,event_signals_feedback,event_source,character varying
+public,event_signals_feedback,event_publish_time,timestamp without time zone
+public,event_signals_feedback,core_entities,ARRAY
+public,event_signals_feedback,ai_impact_path,text
+public,event_signals_feedback,ai_impact_path_json,jsonb
+public,event_signals_feedback,ai_rating,integer
+public,event_signals_feedback,ai_analysis,text
+public,event_signals_feedback,ai_confidence,numeric
+public,event_signals_feedback,expert_rating,integer
+public,event_signals_feedback,expert_comment,text
+public,event_signals_feedback,expert_id,character varying
+public,event_signals_feedback,reviewed_at,timestamp without time zone
+public,event_signals_feedback,status,character varying
+public,event_signals_feedback,model_version,character varying
+public,event_signals_feedback,trained_at,timestamp without time zone
+public,event_signals_feedback,training_job_id,character varying
+public,event_signals_feedback,created_at,timestamp without time zone
+public,event_signals_feedback,updated_at,timestamp without time zone
+public,fact_index_daily,index_code,character varying
+public,fact_index_daily,trade_date,date
+public,fact_index_daily,pre_close,numeric
+public,fact_index_daily,open,numeric
+public,fact_index_daily,high,numeric
+public,fact_index_daily,low,numeric
+public,fact_index_daily,close,numeric
+public,fact_index_daily,volume,numeric
+public,fact_index_daily,amount,numeric
+public,fact_index_daily,pct_chg,numeric
+public,fact_index_daily,data_source,character varying
+public,fact_index_daily,created_at,timestamp without time zone
+public,fact_index_daily,updated_at,timestamp without time zone
+public,fact_lhb_tx_daily,id,integer
+public,fact_lhb_tx_daily,trade_date,date
+public,fact_lhb_tx_daily,company_id,character varying
+public,fact_lhb_tx_daily,seat_name,text
+public,fact_lhb_tx_daily,buy_amount,numeric
+public,fact_lhb_tx_daily,buy_rate,numeric
+public,fact_lhb_tx_daily,sell_amount,numeric
+public,fact_lhb_tx_daily,sell_rate,numeric
+public,fact_lhb_tx_daily,net_amount,numeric
+public,fact_lhb_tx_daily,is_buy,boolean
+public,fact_lhb_tx_daily,reason,text
+public,fact_lhb_tx_daily,data_source,character varying
+public,fact_lhb_tx_daily,created_at,timestamp with time zone
+public,financial_statements,id,integer
+public,financial_statements,company_id,character varying
+public,financial_statements,report_date,date
+public,financial_statements,report_type,character varying
+public,financial_statements,fiscal_year,integer
+public,financial_statements,fiscal_quarter,integer
+public,financial_statements,revenue,numeric
+public,financial_statements,revenue_growth,numeric
+public,financial_statements,net_profit,numeric
+public,financial_statements,net_profit_growth,numeric
+public,financial_statements,gross_margin,numeric
+public,financial_statements,net_margin,numeric
+public,financial_statements,total_assets,numeric
+public,financial_statements,total_liabilities,numeric
+public,financial_statements,equity,numeric
+public,financial_statements,eps,numeric
+public,financial_statements,roe,numeric
+public,financial_statements,roa,numeric
+public,financial_statements,debt_ratio,numeric
+public,financial_statements,pe_ratio,numeric
+public,financial_statements,pb_ratio,numeric
+public,financial_statements,ps_ratio,numeric
+public,financial_statements,free_cash_flow,numeric
+public,financial_statements,operating_cash_flow,numeric
+public,financial_statements,investing_cash_flow,numeric
+public,financial_statements,financing_cash_flow,numeric
+public,financial_statements,dividend_per_share,numeric
+public,financial_statements,dividend_yield,numeric
+public,financial_statements,data_source,character varying
+public,financial_statements,is_verified,boolean
+public,financial_statements,created_at,timestamp without time zone
+public,financial_statements,updated_at,timestamp without time zone
+public,graph_build_jobs,job_id,character varying
+public,graph_build_jobs,job_name,character varying
+public,graph_build_jobs,industry_id,character varying
+public,graph_build_jobs,status,character varying
+public,graph_build_jobs,start_time,timestamp without time zone
+public,graph_build_jobs,end_time,timestamp without time zone
+public,graph_build_jobs,document_count,integer
+public,graph_build_jobs,documents_processed,integer
+public,graph_build_jobs,entities_recognized,integer
+public,graph_build_jobs,relations_extracted,integer
+public,graph_build_jobs,segments_mapped,integer
+public,graph_build_jobs,segments_pending_review,integer
+public,graph_build_jobs,is_incremental,boolean
+public,graph_build_jobs,auto_map_segments,boolean
+public,graph_build_jobs,start_date,timestamp without time zone
+public,graph_build_jobs,end_date,timestamp without time zone
+public,graph_build_jobs,error_message,text
+public,graph_build_jobs,created_at,timestamp without time zone
+public,graph_build_jobs,updated_at,timestamp without time zone
+public,graph_change_logs,log_id,integer
+public,graph_change_logs,version_id,integer
+public,graph_change_logs,table_name,character varying
+public,graph_change_logs,record_id,character varying
+public,graph_change_logs,action,character varying
+public,graph_change_logs,old_value,jsonb
+public,graph_change_logs,new_value,jsonb
+public,graph_change_logs,changed_by,character varying
+public,graph_change_logs,changed_at,timestamp without time zone
+public,graph_change_logs,reason,text
+public,graph_versions,version_id,integer
+public,graph_versions,version_number,character varying
+public,graph_versions,description,text
+public,graph_versions,change_type,character varying
+public,graph_versions,change_count,integer
+public,graph_versions,created_by,character varying
+public,graph_versions,created_at,timestamp without time zone
+public,graph_versions,is_active,boolean
+public,industries,industry_id,character varying
+public,industries,name,character varying
+public,industries,description,text
+public,industries,created_at,timestamp without time zone
+public,industries,updated_at,timestamp without time zone
+public,industry_segments,segment_id,character varying
+public,industry_segments,industry_id,character varying
+public,industry_segments,name,character varying
+public,industry_segments,position_type,character varying
+public,industry_segments,description,text
+public,industry_segments,sort_order,integer
+public,industry_segments,created_at,timestamp without time zone
+public,industry_segments,updated_at,timestamp without time zone
+public,industry_segments,name_embedding,USER-DEFINED
+public,industry_segments,description_embedding,USER-DEFINED
+public,industry_segments,embedding_model,character varying
+public,login_logs,log_id,integer
+public,login_logs,user_id,uuid
+public,login_logs,username,character varying
+public,login_logs,login_type,character varying
+public,login_logs,ip_address,character varying
+public,login_logs,user_agent,text
+public,login_logs,login_at,timestamp without time zone
+public,login_logs,location,character varying
+public,login_logs,device_info,jsonb
+public,login_logs,success,boolean
+public,login_logs,failure_reason,text
+public,map_company_industry_sw,id,integer
+public,map_company_industry_sw,company_id,character varying
+public,map_company_industry_sw,l1_index_code,character varying
+public,map_company_industry_sw,l2_index_code,character varying
+public,map_company_industry_sw,l3_index_code,character varying
+public,map_company_industry_sw,in_date,character varying
+public,map_company_industry_sw,out_date,character varying
+public,map_company_industry_sw,is_new,boolean
+public,map_company_industry_sw,created_at,timestamp without time zone
+public,map_company_industry_sw,updated_at,timestamp without time zone
+public,permissions,permission_id,character varying
+public,permissions,permission_name,character varying
+public,permissions,resource_type,character varying
+public,permissions,action,character varying
+public,permissions,description,text
+public,permissions,created_at,timestamp without time zone
+public,profit_sheets,id,integer
+public,profit_sheets,company_id,character varying
+public,profit_sheets,report_date,date
+public,profit_sheets,report_type,character varying
+public,profit_sheets,notice_date,date
+public,profit_sheets,total_operate_income,numeric
+public,profit_sheets,operate_income,numeric
+public,profit_sheets,operate_cost,numeric
+public,profit_sheets,operate_profit,numeric
+public,profit_sheets,total_profit,numeric
+public,profit_sheets,parent_netprofit,numeric
+public,profit_sheets,deduct_parent_netprofit,numeric
+public,profit_sheets,sale_expense,numeric
+public,profit_sheets,manage_expense,numeric
+public,profit_sheets,finance_expense,numeric
+public,profit_sheets,research_expense,numeric
+public,profit_sheets,invest_income,numeric
+public,profit_sheets,asset_impairment_income,numeric
+public,profit_sheets,credit_impairment_income,numeric
+public,profit_sheets,fairvalue_change_income,numeric
+public,profit_sheets,income_tax,numeric
+public,profit_sheets,net_profit,numeric
+public,profit_sheets,minority_interest,numeric
+public,profit_sheets,basic_eps,numeric
+public,profit_sheets,diluted_eps,numeric
+public,profit_sheets,created_at,timestamp without time zone
+public,profit_sheets,updated_at,timestamp without time zone
+public,quality_check_jobs,job_id,character varying
+public,quality_check_jobs,status,character varying
+public,quality_check_jobs,start_time,timestamp without time zone
+public,quality_check_jobs,end_time,timestamp without time zone
+public,quality_check_jobs,total_issues,integer
+public,quality_check_jobs,isolated_nodes,integer
+public,quality_check_jobs,chain_breaks,integer
+public,quality_check_jobs,outdated_relations,integer
+public,quality_check_jobs,invalid_relations,integer
+public,quality_check_jobs,incomplete_data,integer
+public,quality_check_jobs,error_message,text
+public,quality_check_jobs,created_at,timestamp without time zone
+public,quality_check_logs,log_id,integer
+public,quality_check_logs,check_type,character varying
+public,quality_check_logs,entity_type,character varying
+public,quality_check_logs,entity_id,character varying
+public,quality_check_logs,issue_type,character varying
+public,quality_check_logs,issue_description,text
+public,quality_check_logs,severity,character varying
+public,quality_check_logs,is_resolved,boolean
+public,quality_check_logs,resolved_by,character varying
+public,quality_check_logs,resolved_at,timestamp without time zone
+public,quality_check_logs,resolution_notes,text
+public,quality_check_logs,created_at,timestamp without time zone
+public,review_requests,review_id,integer
+public,review_requests,review_type,character varying
+public,review_requests,entity_type,character varying
+public,review_requests,entity_id,character varying
+public,review_requests,action,character varying
+public,review_requests,data_before,jsonb
+public,review_requests,data_after,jsonb
+public,review_requests,submitter_id,character varying
+public,review_requests,submitter_name,character varying
+public,review_requests,reviewer_id,character varying
+public,review_requests,reviewer_name,character varying
+public,review_requests,status,character varying
+public,review_requests,auto_check_result,jsonb
+public,review_requests,review_comment,text
+public,review_requests,review_result,character varying
+public,review_requests,submitted_at,timestamp without time zone
+public,review_requests,reviewed_at,timestamp without time zone
+public,review_requests,created_at,timestamp without time zone
+public,review_requests,updated_at,timestamp without time zone
+public,role_permissions,id,integer
+public,role_permissions,role_id,character varying
+public,role_permissions,permission_id,character varying
+public,role_permissions,created_at,timestamp without time zone
+public,roles,role_id,character varying
+public,roles,role_name,character varying
+public,roles,description,text
+public,roles,is_system_role,boolean
+public,roles,permissions,jsonb
+public,roles,created_at,timestamp without time zone
+public,roles,updated_at,timestamp without time zone
+public,segment_reviews,review_id,integer
+public,segment_reviews,industry_id,character varying
+public,segment_reviews,company_id,character varying
+public,segment_reviews,suggested_segment_name,character varying
+public,segment_reviews,suggested_position_type,character varying
+public,segment_reviews,company_name,character varying
+public,segment_reviews,company_description,text
+public,segment_reviews,source_job_id,character varying
+public,segment_reviews,status,character varying
+public,segment_reviews,created_by,character varying
+public,segment_reviews,reviewed_by,character varying
+public,segment_reviews,reviewed_at,timestamp without time zone
+public,segment_reviews,created_at,timestamp without time zone
+public,segment_reviews,updated_at,timestamp without time zone
+public,segment_reviews,suggested_description,text
+public,segment_reviews,is_new_segment,boolean
+public,segment_reviews,existing_segment_id,character varying
+public,segment_reviews,review_comment,text
+public,stock_analysis_reports,report_id,integer
+public,stock_analysis_reports,company_id,character varying
+public,stock_analysis_reports,analysis_date,date
+public,stock_analysis_reports,investment_style,character varying
+public,stock_analysis_reports,total_score,numeric
+public,stock_analysis_reports,score_details,jsonb
+public,stock_analysis_reports,report_file_path,character varying
+public,stock_analysis_reports,signal_sources,jsonb
+public,stock_analysis_reports,created_at,timestamp without time zone
+public,stock_block_trades,id,integer
+public,stock_block_trades,company_id,character varying
+public,stock_block_trades,trade_date,date
+public,stock_block_trades,trade_price_unadjust,numeric
+public,stock_block_trades,volume_unadjust,bigint
+public,stock_block_trades,amount,numeric
+public,stock_block_trades,buyer_seat,character varying
+public,stock_block_trades,seller_seat,character varying
+public,stock_block_trades,close_price_unadjust,numeric
+public,stock_block_trades,discount_rate,numeric
+public,stock_block_trades,created_at,timestamp without time zone
+public,stock_block_trades,updated_at,timestamp without time zone
+public,stock_margins,id,integer
+public,stock_margins,company_id,character varying
+public,stock_margins,trade_date,date
+public,stock_margins,margin_balance,numeric
+public,stock_margins,margin_buy_amount,numeric
+public,stock_margins,margin_repay_amount,numeric
+public,stock_margins,margin_net_buy,numeric
+public,stock_margins,short_balance_vol,numeric
+public,stock_margins,short_sell_vol,numeric
+public,stock_margins,short_repay_vol,numeric
+public,stock_margins,short_balance,numeric
+public,stock_margins,total_balance,numeric
+public,stock_margins,created_at,timestamp without time zone
+public,stock_margins,updated_at,timestamp without time zone
+public,stock_prices,id,integer
+public,stock_prices,company_id,character varying
+public,stock_prices,trade_date,date
+public,stock_prices,open_price,numeric
+public,stock_prices,high_price,numeric
+public,stock_prices,low_price,numeric
+public,stock_prices,close_price,numeric
+public,stock_prices,volume,bigint
+public,stock_prices,turnover,numeric
+public,stock_prices,pe_ttm,numeric
+public,stock_prices,pb_lf,numeric
+public,stock_prices,dividend_yield,numeric
+public,stock_prices,change_pct,numeric
+public,stock_prices,ma_5,numeric
+public,stock_prices,ma_10,numeric
+public,stock_prices,ma_20,numeric
+public,stock_prices,ma_60,numeric
+public,stock_prices,data_source,character varying
+public,stock_prices,created_at,timestamp without time zone
+public,stock_prices,updated_at,timestamp without time zone
+public,stock_prices,total_market_cap,numeric
+public,stock_prices,circulating_market_cap,numeric
+public,stock_prices,total_shares,numeric
+public,stock_prices,ps_ratio,numeric
+public,stock_prices,circulating_shares,numeric
+public,stock_prices,amount,numeric
+public,stock_prices_history,company_id,character varying
+public,stock_prices_history,trade_date,date
+public,stock_prices_history,pre_close,numeric
+public,stock_prices_history,open_price,numeric
+public,stock_prices_history,high_price,numeric
+public,stock_prices_history,low_price,numeric
+public,stock_prices_history,close_price,numeric
+public,stock_prices_history,volume,bigint
+public,stock_prices_history,amount,numeric
+public,stock_prices_history,adj_factor,numeric
+public,stock_prices_history,data_source,character varying
+public,stock_prices_history,created_at,timestamp without time zone
+public,stock_prices_history,updated_at,timestamp without time zone
+public,stock_prices_realtime,id,integer
+public,stock_prices_realtime,company_id,character varying
+public,stock_prices_realtime,trade_date,date
+public,stock_prices_realtime,pre_close,numeric
+public,stock_prices_realtime,open_price,numeric
+public,stock_prices_realtime,high_price,numeric
+public,stock_prices_realtime,low_price,numeric
+public,stock_prices_realtime,close_price,numeric
+public,stock_prices_realtime,volume,bigint
+public,stock_prices_realtime,amount,numeric
+public,stock_prices_realtime,num,bigint
+public,stock_prices_realtime,data_source,character varying
+public,stock_prices_realtime,created_at,timestamp without time zone
+public,stock_prices_realtime,updated_at,timestamp without time zone
+public,stock_valuations,company_id,character varying
+public,stock_valuations,trade_date,date
+public,stock_valuations,turnover_rate,numeric
+public,stock_valuations,turnover_rate_free_float,numeric
+public,stock_valuations,volume_ratio,numeric
+public,stock_valuations,pe,numeric
+public,stock_valuations,pe_ttm,numeric
+public,stock_valuations,pb,numeric
+public,stock_valuations,ps,numeric
+public,stock_valuations,ps_ttm,numeric
+public,stock_valuations,dividend_yield_ratio,numeric
+public,stock_valuations,dividend_yield_ttm,numeric
+public,stock_valuations,total_share,bigint
+public,stock_valuations,floating_share,bigint
+public,stock_valuations,free_float_share,bigint
+public,stock_valuations,total_market_value,numeric
+public,stock_valuations,circulating_market_value,numeric
+public,stock_valuations,data_source,character varying
+public,stock_valuations,created_at,timestamp without time zone
+public,stock_valuations,updated_at,timestamp without time zone
+public,strategies,strategy_id,integer
+public,strategies,name,character varying
+public,strategies,strategy_type,character varying
+public,strategies,description,text
+public,strategies,parameters,jsonb
+public,strategies,is_active,boolean
+public,strategies,created_by,character varying
+public,strategies,created_at,timestamp without time zone
+public,strategies,updated_at,timestamp without time zone
+public,strategy_signals,signal_id,integer
+public,strategy_signals,strategy_name,character varying
+public,strategy_signals,strategy_type,character varying
+public,strategy_signals,company_id,character varying
+public,strategy_signals,signal_date,date
+public,strategy_signals,signal_price,numeric
+public,strategy_signals,signal_reason,text
+public,strategy_signals,signal_metadata,jsonb
+public,strategy_signals,is_processed,boolean
+public,strategy_signals,created_at,timestamp without time zone
+public,strategy_stocks,id,integer
+public,strategy_stocks,strategy_id,integer
+public,strategy_stocks,company_id,character varying
+public,strategy_stocks,buy_price,numeric
+public,strategy_stocks,buy_date,date
+public,strategy_stocks,quantity,numeric
+public,strategy_stocks,is_holding,boolean
+public,strategy_stocks,added_at,timestamp without time zone
+public,strategy_trades,trade_id,integer
+public,strategy_trades,strategy_id,integer
+public,strategy_trades,company_id,character varying
+public,strategy_trades,trade_type,character varying
+public,strategy_trades,price,numeric
+public,strategy_trades,quantity,numeric
+public,strategy_trades,amount,numeric
+public,strategy_trades,reason,character varying
+public,strategy_trades,trade_date,timestamp without time zone
+public,strategy_trades,created_at,timestamp without time zone
+public,supply_chain_edges,edge_id,integer
+public,supply_chain_edges,source_company_id,character varying
+public,supply_chain_edges,target_company_id,character varying
+public,supply_chain_edges,relation_type,character varying
+public,supply_chain_edges,detail,text
+public,supply_chain_edges,confidence_score,numeric
+public,supply_chain_edges,source_url,character varying
+public,supply_chain_edges,start_date,date
+public,supply_chain_edges,end_date,date
+public,supply_chain_edges,is_active,boolean
+public,supply_chain_edges,created_at,timestamp without time zone
+public,supply_chain_edges,updated_at,timestamp without time zone
+public,supply_chain_edges,evidence,text
+public,system_config,config_key,character varying
+public,system_config,config_value,text
+public,system_config,config_type,character varying
+public,system_config,description,text
+public,system_config,updated_at,timestamp without time zone
+public,training_jobs,job_id,character varying
+public,training_jobs,job_name,character varying
+public,training_jobs,base_model,character varying
+public,training_jobs,training_method,character varying
+public,training_jobs,sample_count,integer
+public,training_jobs,hyperparameters,jsonb
+public,training_jobs,status,character varying
+public,training_jobs,start_time,timestamp without time zone
+public,training_jobs,end_time,timestamp without time zone
+public,training_jobs,model_output_path,character varying
+public,training_jobs,metrics,jsonb
+public,training_jobs,error_message,text
+public,training_jobs,created_at,timestamp without time zone
+public,training_jobs,updated_at,timestamp without time zone
+public,training_samples,sample_id,integer
+public,training_samples,signal_id,integer
+public,training_samples,prompt,text
+public,training_samples,completion,text
+public,training_samples,sample_type,character varying
+public,training_samples,quality_score,numeric
+public,training_samples,is_used,boolean
+public,training_samples,used_in_training_job,character varying
+public,training_samples,created_at,timestamp without time zone
+public,training_samples,updated_at,timestamp without time zone
+public,user_roles,id,integer
+public,user_roles,user_id,uuid
+public,user_roles,role_id,character varying
+public,user_roles,assigned_by,uuid
+public,user_roles,assigned_at,timestamp without time zone
+public,user_roles,expires_at,timestamp without time zone
+public,user_roles,is_active,boolean
+public,user_roles,created_at,timestamp without time zone
+public,user_sessions,session_id,uuid
+public,user_sessions,user_id,uuid
+public,user_sessions,token_hash,character varying
+public,user_sessions,refresh_token_hash,character varying
+public,user_sessions,ip_address,character varying
+public,user_sessions,user_agent,text
+public,user_sessions,device_info,jsonb
+public,user_sessions,is_active,boolean
+public,user_sessions,created_at,timestamp without time zone
+public,user_sessions,expires_at,timestamp without time zone
+public,user_sessions,last_activity_at,timestamp without time zone
+public,users,user_id,uuid
+public,users,username,character varying
+public,users,email,character varying
+public,users,password_hash,character varying
+public,users,full_name,character varying
+public,users,phone,character varying
+public,users,avatar_url,character varying
+public,users,status,character varying
+public,users,email_verified,boolean
+public,users,phone_verified,boolean
+public,users,last_login_at,timestamp without time zone
+public,users,last_login_ip,character varying
+public,users,login_count,integer
+public,users,failed_login_count,integer
+public,users,locked_until,timestamp without time zone
+public,users,password_changed_at,timestamp without time zone
+public,users,must_change_password,boolean
+public,users,timezone,character varying
+public,users,language,character varying
+public,users,preferences,jsonb
+public,users,created_at,timestamp without time zone
+public,users,updated_at,timestamp without time zone
+public,v_chain_completeness,industry_id,character varying
+public,v_chain_completeness,industry_name,character varying
+public,v_chain_completeness,total_segments,bigint
+public,v_chain_completeness,upstream_count,bigint
+public,v_chain_completeness,midstream_count,bigint
+public,v_chain_completeness,downstream_count,bigint
+public,v_chain_completeness,total_companies,bigint
+public,v_chain_completeness,upstream_companies,bigint
+public,v_chain_completeness,midstream_companies,bigint
+public,v_chain_completeness,downstream_companies,bigint
+public,v_quality_metrics,total_companies,bigint
+public,v_quality_metrics,total_relations,bigint
+public,v_quality_metrics,total_industries,bigint
+public,v_quality_metrics,total_segments,bigint
+public,v_quality_metrics,isolated_companies,bigint
+public,v_quality_metrics,outdated_relations,bigint
+public,v_quality_metrics,pending_reviews,bigint
+public,v_relation_statistics,relation_type,character varying
+public,v_relation_statistics,total_count,bigint
+public,v_relation_statistics,avg_confidence,numeric
+public,v_relation_statistics,max_confidence,numeric
+public,v_relation_statistics,min_confidence,numeric
+public,vane_data_task,id,uuid
+public,vane_data_task,user_id,uuid
+public,vane_data_task,task_type,character varying
+public,vane_data_task,task_status,character varying
+public,vane_data_task,start_time,timestamp with time zone
+public,vane_data_task,end_time,timestamp with time zone
+public,vane_data_task,cfg,text
+public,vane_data_task,cache,text
+public,vane_data_task,extra,text
+public,vane_data_task,create_time,timestamp with time zone
+public,vane_data_task,update_time,timestamp with time zone
+public,vane_data_user,id,uuid
+public,vane_data_user,create_time,timestamp with time zone
+public,vane_data_user,update_time,timestamp with time zone
+public,vane_data_user,delete_time,timestamp with time zone
+public,vane_data_user,del_state,bigint
+public,vane_data_user,user_name,character varying
+public,vane_data_user,hash_pwd,character varying

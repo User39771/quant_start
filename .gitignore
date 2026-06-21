@@ -1,0 +1,45 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Python caches and local tooling
+.codex/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local logs and ad-hoc command output
+response.txt
+*.log
+
+# Local archives
+reports.zip
+*.zip
+
+# Large/local data caches
+data/cache/
+data/raw/
+data/interim/
+data/processed/factor_panel.csv
+data/processed/backtest_holdings.csv
+data/processed/backtest_trades.csv
+data/processed/backtest_nav.csv
+data/processed/portfolio_experiment_nav.csv
+data/processed/walk_forward_nav.csv
+data/processed/db_sync_runs/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

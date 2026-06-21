@@ -1,0 +1,4 @@
+﻿factor,cf_yield_neutral,reversal_20d_neutral,volatility_20d_neutral
+cf_yield_neutral,1.0,0.019451030643279025,-0.13664086645728182
+reversal_20d_neutral,0.019451030643279025,1.0,-0.2606262110390788
+volatility_20d_neutral,-0.13664086645728182,-0.2606262110390788,1.0
