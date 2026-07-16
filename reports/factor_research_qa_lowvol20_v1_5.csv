@@ -1,0 +1,7 @@
+﻿check,actual,expected,absolute_error,relative_error,atol,rtol,pass,critical,notes,research_only,primary_factor,underlying_measure,primary_lookback_return_intervals,required_price_observations,target_rebalance_step,forward_horizon_trading_days_approx,signal_construction_point_in_time,universe_point_in_time,current_universe_historical_research,suspension_status_available,execution_sim_ready,formal_performance_conclusion_allowed,no_investment_conclusion
+factor_panel_row_count,784.0,784.0,0.0,0.0,1e-10,1e-08,True,True,,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+factor_panel_unique_keys,784.0,784.0,0.0,0.0,1e-10,1e-08,True,True,,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+baseline_endpoints_in_000300,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+signal_before_rebalance,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+lowvol20_negative_vol20,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+evaluation_subset_signal,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True

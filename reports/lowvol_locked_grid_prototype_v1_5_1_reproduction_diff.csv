@@ -1,0 +1,8 @@
+file,key,column,existing_value,reproduced_value,absolute_error,relative_error,status,classification
+lowvol_locked_grid_prototype_periods_v1_5_1.csv,all,*,399,399,0,0,pass,unchanged_except_allowed_fields
+lowvol_locked_grid_prototype_nav_v1_5_1.csv,all,*,1197,1197,0,0,pass,unchanged_except_allowed_fields
+lowvol_locked_grid_prototype_summary_v1_5_1.csv,all,*,3,3,0,0,pass,unchanged_except_allowed_fields
+lowvol_locked_grid_prototype_qa_v1_5_1.csv,all,*,17,17,0,0,pass,unchanged_except_allowed_fields
+lowvol_locked_grid_prototype_v1_5_1.md,all,*,existing,reproduced,,,pass,unchanged_except_allowed_fields
+lowvol_locked_grid_prototype_v1_5_vs_v1_5_1_diff.csv,all,*,3708,3708,0,0,pass,unchanged_except_allowed_fields
+lowvol_locked_grid_prototype_v1_5_vs_v1_5_1_diff.md,all,*,existing,reproduced,,,pass,unchanged_except_allowed_fields

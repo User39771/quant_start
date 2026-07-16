@@ -1,0 +1,5 @@
+# LOWVOL20 Prospective Log v1.5
+
+status=waiting_for_complete_period
+prospective_period_count=0
+formal_performance_conclusion_allowed=false

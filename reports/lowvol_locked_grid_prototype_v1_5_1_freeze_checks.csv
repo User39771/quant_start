@@ -1,0 +1,41 @@
+phase,check_id,status,critical,actual,expected,evidence,notes
+preservation,required_artifacts_present,pass,True,0,0,,
+static,strict_boolean_contract,pass,True,1,1,run_lowvol_locked_grid_prototype_v1_5_1.py:46,CSV parsing does not use astype(bool)
+static,label_blind_universe_contract,pass,True,1,1,run_lowvol_locked_grid_prototype_v1_5_1.py:138,
+static,no_price_fill_or_date_substitution,pass,True,,none,run_lowvol_locked_grid_prototype_v1_5_1.py:305,
+static,canonical_grid_contract,pass,True,count=57;equal=True,count=57;equal=True,run_lowvol_locked_grid_prototype_v1_5_1.py:117,
+preservation,frozen_universe_56_unique_codes,pass,True,56,56,frozen universe CSV,
+prospective,protocol_isolated_and_waiting,pass,True,periods=0,periods=0;freeze_date=2026-07-11;append-only,prospective protocol and empty ledger,
+test_audit,required_counterfactual_coverage,pass,False,,none,test source inspection,Missing items require human-approved test-only additions
+test_audit,prospective_files_unchanged_test,deferred,False,not_implemented,deferred,audit-time before/after SHA-256,covered by audit-time before/after hashes; dedicated unit test deferred
+tests,targeted_tests,pass,True,exit=0;count=11,exit=0,D:\Python\python.exe -m unittest tests.test_lowvol_locked_grid_prototype_v1_5_1 -v,"test_failed_run_removes_success_outputs_and_keeps_only_failure_report (tests.test_lowvol_locked_grid_prototype_v1_5_1.LowVolLockedGridPrototypeV151Tests.test_failed_run_removes_success_outputs_and_keeps_only_failure_report) ... ok
+test_missing_or_noncontinuous_period_index_is_invalid (tests.test_lowvol_locked_grid_prototype_v1_5_1.LowVolLockedGridPrototypeV151Tests.test_missing_or_noncontinuous_period_index_is_invalid) ... ok
+test_ordered_period_keys_require_index_order_and_exact_rows (tests.test_lowvol_locked_grid_prototype_v1_5_1.LowVolLockedGridPrototypeV151Tests.test_ordered_period_keys_require_index_order_and_exact_rows) ... ok
+test_q5_and_q1_are_label_blind (tests.test_lowvol_locked_grid_prototype_v1_5_1.LowVolLockedGridPrototypeV151Tests.test_q5_and_q1_are_label_blind) ... ok
+test_q5_or_q1_diff_is_critical_and_q5_summary_change_is_nonlocal (tests.test_lowvol_locked_grid_prototype_v1_5_1.LowVolLockedGridPrototypeV151Tests.test_q5_or_q1_diff_is_critical_and_q5_summary_change_is_nonlocal) ... ok
+test_strict_false_is_false_and_unknown_fails (tests.test_lowvol_locked_grid_prototype_v1_5_1.LowVolLockedGridPrototypeV151Tests.test_strict_false_is_false_and_unknown_fails) ... ok
+test_universe_target_is_signal_sample_and_label_blind (tests.test_lowvol_locked_grid_prototype_v1_5_1.LowVolLockedGridPrototypeV151Tests.test_universe_target_is_signal_sample_and_label_blind) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.073s
+
+OK"
+tests,related_regression_tests,pass,True,exit=0;count=66,exit=0,D:\Python\python.exe -m unittest tests.test_lowvol_locked_grid_prototype_v1_5_1 tests.test_lowvol_locked_grid_prototype_v1_5 tests.test_locked_grid_replay_v1_5 tests.test_lowvol20_hypothesis_v1_4 tests.test_mom60_hypothesis_v1_3 tests.test_adjusted_stock_pool_baseline_v1_2 tests.test_baseline_attribution_v1_2 -v,"test_benchmark_endpoint_alignment_rejects_missing_and_duplicates (tests.test_baseline_attribution_v1_2.BaselineAttributionTests.test_benchmark_endpoint_alignment_rejects_missing_and_duplicates) ... ok
+test_core_attribution_math (tests.test_baseline_attribution_v1_2.BaselineAttributionTests.test_core_attribution_math) ... ok
+test_cost_scenarios_align_by_period_key (tests.test_baseline_attribution_v1_2.BaselineAttributionTests.test_cost_scenarios_align_by_period_key) ... ok
+test_coverage_theme_and_no_positive_contributor (tests.test_baseline_attribution_v1_2.BaselineAttributionTests.test_coverage_theme_and_no_positive_contributor) ... ok
+test_critical_qa_and_report_boundaries (tests.test_baseline_attribution_v1_2.BaselineAttributionTests.test_critical_qa_and_report_boundaries) ... ok
+test_period_selection_drawdown_and_leave_one_out (tests.test_baseline_attribution_v1_2.BaselineAttributionTests.test_period_selection_drawdown_and_leave_one_out) ... ok
+test_theme_allocation_and_benchmark_relative_wealth (tests.test_baseline_attribution_v1_2.BaselineAttributionTests.test_theme_allocation_and_benchmark_relative_wealth) ... ok
+
+----------------------------------------------------------------------
+Ran 66 tests in 11.818s
+
+OK"
+reproduction,controlled_reproduction,pass,True,exit=0;differences=0,exit=0;differences=0,D:\Python\python.exe -m scripts.run_lowvol_locked_grid_prototype_v1_5_1 --project-root C:\Users\HANGXI~1\AppData\Local\Temp\lowvol_v151_freeze_7hh7l1n5,
+reconciliation,full_period_endpoint_pairs,pass,True,57,57,periods v1.5.1 ordered Q5 cost=0 keys,
+reconciliation,summary_core_metrics_recomputed,pass,True,1,1,"period returns, NAV, turnover and cost independently recomputed",
+reconciliation,candidate_critical_qa_failures,pass,True,0,0,raw v1.5.1 QA CSV,
+reconciliation,v15_v151_diff_complete,pass,True,rows=3708;unexpected=0,nonempty diff; unexpected=0,raw diff CSV; count derived at runtime,
+preservation,v15_protected_hashes_unchanged,pass,True,1,1,before/after SHA-256,
+prospective,prospective_hashes_unchanged,pass,True,1,1,before/after SHA-256,

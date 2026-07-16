@@ -1,0 +1,8 @@
+﻿rule,current_value,default_pool,expanded_pool,hard_exclude,reason
+最低日均成交额,1亿,exclude_on_fail,exclude_on_fail,yes,保证基本流动性
+最低市值,30亿,exclude_on_fail,exclude_on_fail,yes,避免过小盘噪声
+ST,一律剔除,exclude_on_fail,exclude_on_fail,yes,降低退市/流动性风险
+financial_quality_flag=fail,剔除,exclude_on_fail,exclude_on_fail,yes,财务质量不支持
+valuation=high,不剔除,risk_note_only,risk_note_only,no,但 manual题材股常高估需结合增长
+conditional,不进默认池,exclude,allow,no,只进扩展研究池
+debt_to_asset>80%,v1.2 explicit leverage rule,exclude,allow_with_leverage_risk_flag,"no, unless another explicit hard rule is hit",High leverage blocks default_pool but may remain in expanded_pool with leverage_risk_flag and risk note.

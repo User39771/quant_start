@@ -1,0 +1,7 @@
+规则,当前值,原因
+最低日均成交额,1亿,保证基本流动性
+最低市值,30亿,避免过小盘噪声
+ST,一律剔除,降低退市/流动性风险
+financial_quality_flag=fail,剔除,财务质量不支持
+valuation=high,不剔除,但 manual题材股常高估需结合增长
+conditional,不进默认池,只进扩展研究池

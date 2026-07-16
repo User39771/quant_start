@@ -1,0 +1,19 @@
+{
+  "theme_name": "sample_theme",
+  "concept_names": [
+    "商业航天",
+    "人工智能"
+  ],
+  "start": "2026-06-01",
+  "end": "2026-06-05",
+  "output_root": ".",
+  "benchmark_indices": [
+    "000001"
+  ],
+  "max_symbols": 2,
+  "adjusted": true,
+  "cache_only": false,
+  "dry_run": false,
+  "max_requests_per_run": 20,
+  "sleep_seconds": 10.0
+}

@@ -1,0 +1,6 @@
+﻿severity,issue_type,stock_code,trade_date,field,observed_value,expected_rule,row_count,impact,recommendation
+Medium,manifest_error_status,002544,,final_status,error,latest qfq manifest status should be ok or cached_ok,1,Latest fetch status is a caveat even if panel coverage passes.,Review qfq_fetch_manifest_v1_2.csv for the latest source outcome.
+Medium,manifest_error_status,300133,,final_status,error,latest qfq manifest status should be ok or cached_ok,1,Latest fetch status is a caveat even if panel coverage passes.,Review qfq_fetch_manifest_v1_2.csv for the latest source outcome.
+Medium,manifest_partial_ok_status,002049,,final_status,partial_ok,latest qfq manifest status should be ok or cached_ok,1,Latest fetch status is a caveat even if panel coverage passes.,Review qfq_fetch_manifest_v1_2.csv for the latest source outcome.
+Medium,manifest_partial_ok_status,002131,,final_status,partial_ok,latest qfq manifest status should be ok or cached_ok,1,Latest fetch status is a caveat even if panel coverage passes.,Review qfq_fetch_manifest_v1_2.csv for the latest source outcome.
+Medium,manifest_partial_ok_status,301171,,final_status,partial_ok,latest qfq manifest status should be ok or cached_ok,1,Latest fetch status is a caveat even if panel coverage passes.,Review qfq_fetch_manifest_v1_2.csv for the latest source outcome.

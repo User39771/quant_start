@@ -1,0 +1,18 @@
+﻿metric,value,pass_fail,threshold,notes
+total_rows,70145,info,,
+stock_count,56,info,,
+universe_stock_count,56,info,,
+date_min,2020-01-02,info,,parsed with pd.to_datetime
+date_max,2026-06-16,info,,parsed with pd.to_datetime
+invalid_date_count,0,pass,0,
+future_date_count,0,pass,0,
+duplicate_stock_date_rows,0,pass,0,
+exact_duplicate_rows,0,pass,0,
+row_coverage_ratio,0.96359,pass,>=0.95,
+stock_coverage_ratio,0.964286,pass,>=0.95,
+latest_manifest_error_count,2,info,,
+latest_manifest_partial_ok_count,3,info,,
+data_quality_pass,true,pass,,
+adjusted_return_baseline_allowed,true,pass,data_quality_pass=true and both coverage ratios >=0.95,
+formal_performance_conclusion_allowed,false,fail,always false for this QA stage,
+execution_sim_ready,false,fail,requires historical ST/suspension/limit-up-down state,

@@ -1,0 +1,60 @@
+stock_code,current_min_date,current_max_date,current_qfq_status,current_row_count,current_source,known_gap_count,refresh_required,proposed_primary_source,proposed_fallback_source,expected_start_date,expected_end_date,notes
+000063,2020-01-02,2026-06-16,cached_ok,1561,ak.stock_zh_a_daily,4,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates; gap inventory is reconciliation/non-trading-date diagnostics.
+000681,2020-01-02,2026-06-16,cached_ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+000901,2020-01-02,2026-06-16,cached_ok,1556,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+000938,2020-01-02,2026-06-16,cached_ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+000977,2020-01-02,2026-06-16,cached_ok,1556,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+001208,2021-06-24,2026-06-16,ok,1206,ak.stock_zh_a_daily,3,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Pre-listing dates are expected to be absent.
+002015,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002044,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002049,2020-01-02,2026-06-16,partial_ok,1551,ak.stock_zh_a_daily,4,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Missing 10 raw-base trading dates 2025-12-30..2026-01-14 including baseline endpoint 2026-01-12; also cache-only reconciliation diagnostics; source universe has duplicate thematic row but one unique code.
+002065,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002131,2020-01-02,2026-06-16,partial_ok,1559,ak.stock_zh_a_daily,3,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Missing 3 raw-base trading dates 2026-01-16..2026-01-20; cache-only reconciliation diagnostics remain.
+002212,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002230,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002236,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002279,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002315,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002361,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002373,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002396,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002410,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002446,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002544,,,error,0,none,6,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Full qfq failure: no cache and no legal qfq rows; 1269 raw-base dates absent plus downstream endpoint/lookup gaps; P0 repair but still one of all 56 full attempts.
+002558,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002757,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002792,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002881,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002929,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002935,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+002987,2020-05-07,2026-06-16,ok,1482,ak.stock_zh_a_daily,3,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Pre-listing dates are expected to be absent.
+300002,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300017,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300033,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300047,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300058,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300101,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300113,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300133,,,error,0,none,6,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Full qfq failure: no cache and no legal qfq rows; 1269 raw-base dates absent plus downstream endpoint/lookup gaps; P0 repair but still one of all 56 full attempts.
+300170,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300182,2020-01-02,2026-06-16,ok,1557,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300339,2020-01-02,2026-06-16,ok,1557,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300348,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300378,2020-01-02,2026-06-16,cached_ok,1562,ak.stock_zh_a_daily,1,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Qfq cache is current through 2026-06-16; raw-base panel ends 2026-06-12.
+300413,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300454,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300458,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300496,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300627,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300629,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300634,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300674,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_a_daily,2,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Existing cache covers raw-base dates.
+300857,2020-07-27,2026-06-16,cached_ok,1427,ak.stock_zh_a_hist,3,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Pre-listing dates are expected to be absent; existing cache source is fallback.
+300996,2021-06-03,2026-06-16,ok,1220,ak.stock_zh_a_daily,3,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Pre-listing dates are expected to be absent.
+301050,2021-08-24,2026-06-16,ok,1163,ak.stock_zh_a_daily,3,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Pre-listing dates are expected to be absent.
+301110,2022-03-11,2026-06-16,ok,1033,ak.stock_zh_a_daily,3,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Pre-listing dates are expected to be absent.
+301165,2022-11-21,2026-06-16,ok,864,ak.stock_zh_a_daily,3,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Pre-listing dates are expected to be absent.
+301171,2022-08-19,2026-06-16,partial_ok,921,ak.stock_zh_a_daily,4,true,ak.stock_zh_a_daily,ak.stock_zh_a_hist,2020-01-02,latest_available_at_run,Missing 3 raw-base trading dates 2026-01-15..2026-01-19; pre-listing/non-trading diagnostics and cache-only reconciliation remain.
+000300,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_index_daily_tx,0,true,ak.stock_zh_index_daily_tx,akshare.index_zh_a_hist,2020-01-02,latest_available_at_run,Index identity required: CSI 300; request symbol sh000300; reject stock endpoint or mismatched returned name/metadata.
+000852,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_index_daily_tx,0,true,ak.stock_zh_index_daily_tx,akshare.index_zh_a_hist,2020-01-02,latest_available_at_run,Index identity required: CSI 1000; request symbol sh000852; reject stock endpoint or mismatched returned name/metadata.
+399006,2020-01-02,2026-06-16,ok,1562,ak.stock_zh_index_daily_tx,0,true,ak.stock_zh_index_daily_tx,akshare.index_zh_a_hist,2020-01-02,latest_available_at_run,Index identity required: ChiNext Price Index; request symbol sz399006; reject stock endpoint or mismatched returned name/metadata.

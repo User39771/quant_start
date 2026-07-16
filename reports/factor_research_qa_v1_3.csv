@@ -1,0 +1,15 @@
+﻿check,actual,expected,absolute_error,relative_error,atol,rtol,pass,critical,notes,research_only,primary_factor,primary_lookback_trading_days,forward_horizon_trading_days,signal_construction_point_in_time,universe_point_in_time,current_universe_historical_research,formal_performance_conclusion_allowed,execution_sim_ready,no_investment_conclusion
+factor_panel_row_count,3192.0,3192.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+factor_panel_unique_key_count,3192.0,3192.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+baseline_endpoints_in_market_calendar,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+signal_dates_before_rebalance,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+lookback_before_signal,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+forward_end_after_rebalance,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+signal_sample_subset_eligible,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+evaluation_sample_subset_signal,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+primary_factor_locked,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+quantile_signal_count_reconciliation,0.0,0.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+quantile_label_count_reconciliation,0.0,0.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+q5_q1_reconciliation,0.0,0.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+robustness_factor_set,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True
+sample_basis_separation,1.0,1.0,0.0,0.0,1e-10,1e-08,True,True,,True,MOM60,60,20,True,False,True,False,False,True

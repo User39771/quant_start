@@ -43,3 +43,29 @@ data/processed/db_sync_runs/
 Thumbs.db
 .vscode/
 .idea/
+# Python
+__pycache__/
+*.pyc
+.ruff_cache/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Data
+data/cache/
+data/raw/
+data/processed/*.csv
+
+# Reports generated outputs
+reports/prospective/
+reports/recovery/
+
+# Logs
+*.log
+
+# Temporary
+*.tmp

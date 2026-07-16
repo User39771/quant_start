@@ -1,0 +1,15 @@
+﻿metric,value,status,sample_basis,research_only,primary_factor,underlying_measure,primary_lookback_return_intervals,required_price_observations,target_rebalance_step,forward_horizon_trading_days_approx,signal_construction_point_in_time,universe_point_in_time,current_universe_historical_research,suspension_status_available,execution_sim_ready,formal_performance_conclusion_allowed,no_investment_conclusion
+historical_validation_mean_rank_ic,0.0827364854824809,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+rank_ic_standard_error,0.05251705960527768,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+rank_ic_ci_lower,-0.020196951343863345,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+rank_ic_ci_upper,0.18566992230882515,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+historical_validation_mean_q5_q1,0.019511486479359148,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+q5_q1_standard_error,0.018961150507043428,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+q5_q1_ci_lower,-0.01765236851444597,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+q5_q1_ci_upper,0.05667534147316426,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+primary_evidence_pass_count,4,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+auxiliary_evidence_pass_count,7,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+all_exact_validation_mean_rank_ic,0.0827364854824809,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+all_exact_validation_mean_q5_q1,0.019511486479359148,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+primary_and_all_exact_direction_consistent,True,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True
+verdict,directionally_supported_for_strategy_prototyping,ok,lowvol20_primary_reliable_sample,True,LOWVOL20,VOL20,20,21,20_baseline_calendar_entries,20,True,False,True,False,False,False,True

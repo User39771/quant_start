@@ -1,0 +1,14 @@
+﻿stock_code,trade_date,qfq_close,source_qfq,adjusted_close,adjusted_flag
+000063,2021-03-22,27.52,ak.stock_zh_a_daily,27.52,True
+000063,2021-03-23,27.57,ak.stock_zh_a_daily,27.57,True
+000063,2021-03-24,26.95,ak.stock_zh_a_daily,26.95,True
+000063,2021-03-25,26.8,ak.stock_zh_a_daily,26.8,True
+000063,2021-03-26,27.35,ak.stock_zh_a_daily,27.35,True
+000063,2021-03-29,27.14,ak.stock_zh_a_daily,27.14,True
+000063,2021-03-30,27.2,ak.stock_zh_a_daily,27.2,True
+000063,2021-04-01,27.27,ak.stock_zh_a_daily,27.27,True
+000063,2021-04-02,27.46,ak.stock_zh_a_daily,27.46,True
+000063,2021-04-06,27.28,ak.stock_zh_a_daily,27.28,True
+000063,2021-04-07,27.01,ak.stock_zh_a_daily,27.01,True
+000063,2021-04-08,26.79,ak.stock_zh_a_daily,26.79,True
+000063,2021-04-09,26.27,ak.stock_zh_a_daily,26.27,True

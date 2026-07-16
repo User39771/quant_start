@@ -1,0 +1,12 @@
+﻿symbol,asset_type,gap_type,details
+002049,stock,missing_high,10 rows
+002049,stock,missing_low,10 rows
+002049,stock,missing_amount,10 rows
+002131,stock,missing_high,3 rows
+002131,stock,missing_low,3 rows
+002131,stock,missing_amount,3 rows
+300378,stock,missing_high,1560 rows
+300378,stock,missing_low,1560 rows
+301171,stock,missing_high,3 rows
+301171,stock,missing_low,3 rows
+301171,stock,missing_amount,3 rows

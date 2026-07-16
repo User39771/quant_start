@@ -1,0 +1,8 @@
+record_type,path,sha256,freeze_date,generated_at,universe_count,notes
+input,C:/Users/Hangxi Yang/.codex/attachments/c98b1477-8628-4615-a8e0-b83df580c6a8/pasted-text-1.txt,bd78ece2edbf89aa6a8a31aed7c857946cebba66513acb9eb06f466b0e861983,2026-07-11,2026-07-11T23:05:10+08:00,56,governing objective
+input,data/processed/backtest_universe_research_v1_2.csv,e468c04445cc19e158a7f0ed2f875a92660bc827a7c0860a169157377c7eabf5,2026-07-11,2026-07-11T23:05:10+08:00,56,canonical source universe; 57 rows reduced to 56 unique codes by combining the two themes for 002049
+input,reports/lowvol20_v1_4_freeze_review.md,f677bff1a921ccaca850b0e019aa70131dba20e3a672dcb8f28c693b13920c86,2026-07-11,2026-07-11T23:05:10+08:00,56,frozen LOWVOL20 v1.4 audit contract
+input,reports/factor_lowvol20_v1_4.md,a727ef4393b1497eea85d00f213566e63fff548eb3a3d4fafc4ddf85bdd382ff,2026-07-11,2026-07-11T23:05:10+08:00,56,frozen LOWVOL20 v1.4 research report
+output,data/processed/research_universe_lowvol_freeze_20260711.csv,a8c2803802f1927176fdf7940aa187b551fdc6d03037876c1c5d9d297780e626,2026-07-11,2026-07-11T23:05:10+08:00,56,frozen universe with preserved source evidence fields
+output,reports/lowvol20_prospective_protocol_v1_5.md,3fdc10fe9b99064a2da70684ad5b202c7b4996c64546b83856495555a49fece5,2026-07-11,2026-07-11T23:05:10+08:00,56,append-only prospective protocol
+output,reports/lowvol_strategy_prototype_v1_5_spec.md,eceb3dd4c8417dd73ec52d39eeb75ab354adc32cb2d44555452cec43227391ca,2026-07-11,2026-07-11T23:05:10+08:00,56,strategy specification only; no strategy code

@@ -1,0 +1,30 @@
+﻿code,name,theme,current_review_status,current_final_pool_suggestion,evidence_strength,answer_q4_pool_decision,decision_reason,manual_followup_needed,evidence_url
+000063,中兴通讯,AI,core,watch_only,strong,expanded,有年报业务证据但不满足默认池全部严格条件，或当前为 conditional,no,http://static.cninfo.com.cn/finalpage/2026-03-07/1225000301.PDF
+000818,航锦科技,AI,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-29/1225240204.PDF
+000938,紫光股份,AI,core,watch_only,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-15/1225101866.PDF
+000977,浪潮信息,AI,core,watch_only,strong,expanded,有年报业务证据但不满足默认池全部严格条件，或当前为 conditional,no,http://static.cninfo.com.cn/finalpage/2026-04-11/1225096638.PDF
+001270,铖昌科技,商业航天,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-17/1225113621.PDF
+001388,信通电子,AI,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-24/1225167759.PDF
+002151,北斗星通,商业航天,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-03-26/1225030960.PDF
+002230,科大讯飞,AI,core,watch_only,strong,expanded,有年报业务证据但不满足默认池全部严格条件，或当前为 conditional,no,http://static.cninfo.com.cn/finalpage/2026-04-29/1225233581.PDF
+002236,大华股份,AI,core,watch_only,strong,expanded,有年报业务证据但不满足默认池全部严格条件，或当前为 conditional,no,http://static.cninfo.com.cn/finalpage/2026-04-18/1225122378.PDF
+002465,海格通信,商业航天,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-03-28/1225044009.PDF
+002649,博彦科技,AI,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-29/1225233129.PDF
+002829,星网宇达,商业航天,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-24/1225172121.PDF
+002912,中新赛克,AI,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-03-18/1225015058.PDF
+002935,天奥电子,商业航天,core,watch_only,strong,expanded,有年报业务证据但不满足默认池全部严格条件，或当前为 conditional,no,http://static.cninfo.com.cn/finalpage/2026-04-25/1225187755.PDF
+300045,华力创通,商业航天,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-22/1225139087.PDF
+300053,航宇微,商业航天,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-10/1225091393.PDF
+300101,振芯科技,商业航天,core,watch_only,strong,expanded,有年报业务证据但不满足默认池全部严格条件，或当前为 conditional,no,http://static.cninfo.com.cn/finalpage/2026-04-28/1225210200.PDF
+300229,拓尔思,AI,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-15/1225103279.PDF
+300342,天银机电,商业航天,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-10/1225088563.PDF
+300447,全信股份,商业航天,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-03-21/1225022200.PDF
+300455,航天智装,商业航天,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-03-28/1225044184.PDF
+300474,景嘉微,AI,core,reject_for_trading_pool,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-24/1225166816.PDF
+300479,神思电子,AI,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-10/1225087983.PDF
+300627,华测导航,商业航天,core,default_candidate,strong,default,core 且年报证据强，基础财务/流动性过滤通过,no,http://static.cninfo.com.cn/finalpage/2026-04-17/1225114088.PDF
+300768,迪普科技,AI,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-14/1225098889.PDF
+300965,恒宇信通,商业航天,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-02/1225072374.PDF
+301050,雷电微力,商业航天,core,watch_only,strong,expanded,有年报业务证据但不满足默认池全部严格条件，或当前为 conditional,no,http://static.cninfo.com.cn/finalpage/2026-04-24/1225169202.PDF
+301129,瑞纳智能,AI,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-23/1225147178.PDF
+301159,三维天地,AI,conditional,manual_check,strong,reject,不通过 stock_pool_rules 的 ST/财务质量/流动性/市值成交额基础过滤，或财务风险为 high,yes,http://static.cninfo.com.cn/finalpage/2026-04-28/1225200914.PDF

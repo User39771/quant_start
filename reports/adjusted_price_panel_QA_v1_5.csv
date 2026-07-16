@@ -1,0 +1,2 @@
+critical_qa_pass,stock_coverage_ratio,stock_count,row_count,min_date,max_date,duplicate_stock_date_count,benchmark_count,benchmark_max_date,failed_instrument_count
+True,1.0,56,85207,2020-01-02,2026-07-10,0,3,2026-07-10,0

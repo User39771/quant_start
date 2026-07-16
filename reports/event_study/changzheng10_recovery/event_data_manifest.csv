@@ -1,0 +1,3 @@
+﻿instrument_type,instrument_code,instrument_name,source_endpoint,akshare_version,data_fetch_time_utc,requested_start_date,requested_end_date,price_date_min,price_date_max,row_count,status,source_sha256,error
+index,000300,HS300,akshare.stock_zh_index_daily_tx,1.18.64,2026-07-15T10:26:25.494086+00:00,20260301,20260717,2026-03-02,2026-07-15,93,blocked_waiting_for_t_plus_5,638AD1D3872AD4D621EC8EFA4D72446B7D81127BAD89FDF0458D3988B8DBCB4F,T+5 is not observable; HS300 latest date=2026-07-15
+index,000852,CSI1000,akshare.stock_zh_index_daily_tx,1.18.64,2026-07-15T10:26:25.494086+00:00,20260301,20260717,2026-03-02,2026-07-15,93,blocked_waiting_for_t_plus_5,380F8E9770DB5D555B16F3822CB37DC4533114D320FC1BCF4417234E9456B7BA,T+5 is not observable; HS300 latest date=2026-07-15

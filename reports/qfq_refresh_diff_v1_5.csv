@@ -1,0 +1,8 @@
+metric,value
+old_rows,70145.0
+new_rows,85207.0
+newly_added_rows,15078.0
+old_only_rows,16.0
+overlap_rows,70129.0
+changed_overlap_rows_gt_1e_8,3768.0
+maximum_overlap_absolute_difference,1.2900000000000063

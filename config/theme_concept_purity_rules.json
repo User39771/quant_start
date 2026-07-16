@@ -1,0 +1,44 @@
+{
+  "broad_concepts": {
+    "AI": [
+      "人工智能",
+      "AIGC概念",
+      "AIGC",
+      "浜哄伐鏅鸿兘",
+      "AIGC����"
+    ],
+    "商业航天": [
+      "商业航天",
+      "鍟嗕笟鑸ぉ"
+    ]
+  },
+  "specific_concepts": {
+    "AI": [
+      "AI智能体",
+      "算力概念",
+      "算力租赁",
+      "数据中心",
+      "大模型",
+      "DeepSeek概念",
+      "绠楀姏绉熻祦",
+      "��������"
+    ],
+    "商业航天": [
+      "卫星互联网",
+      "北斗导航",
+      "通用航空",
+      "航天装备",
+      "鍖楁枟瀵艰埅"
+    ]
+  },
+  "weak_concept_patterns": [
+    "概念",
+    "姒傚康"
+  ],
+  "thresholds": {
+    "low_exposure_score": 3.0,
+    "liquidity_amount_20d": 50000000,
+    "overheat_return_20d": 0.5,
+    "fresh_price_max_days": 3
+  }
+}

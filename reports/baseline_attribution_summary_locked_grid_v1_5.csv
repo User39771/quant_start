@@ -1,0 +1,113 @@
+﻿scenario_id,universe_name,transaction_cost,section,metric,value,denominator,status,notes
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,stock_positive_contribution_hhi,0.03131898605873429,1.3505321731049271,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,stock_absolute_contribution_hhi,0.02644036921605497,1.521723797073567,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,stock_top5_share_of_positive_contribution,0.26216411071909357,1.3505321731049271,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,stock_top10_share_of_positive_contribution,0.4049193583055946,1.3505321731049271,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,stock_top5_share_of_absolute_contribution,0.23267104506118283,1.521723797073567,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,stock_top10_share_of_absolute_contribution,0.3605239788110683,1.521723797073567,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,theme_positive_contribution_hhi,0.6189339947573546,1.179340549136287,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,theme_absolute_contribution_hhi,0.6189339947573546,1.179340549136287,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,theme_top5_share_of_positive_contribution,1.0,1.179340549136287,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,theme_top10_share_of_positive_contribution,1.0,1.179340549136287,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,theme_top5_share_of_absolute_contribution,1.0,1.179340549136287,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,theme_top10_share_of_absolute_contribution,1.0,1.179340549136287,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,period_concentration,period_positive_contribution_hhi,0.06424567120067194,4.473754120139305,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,period_concentration,period_absolute_contribution_hhi,0.03287408077572012,7.768167691142323,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,period_concentration,period_top5_share_of_positive_contribution,0.4226992997313593,4.473754120139305,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,period_concentration,period_top10_share_of_positive_contribution,0.6684079592549997,4.473754120139305,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,period_concentration,period_top5_share_of_absolute_contribution,0.2766658083063257,7.768167691142323,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,period_concentration,period_top10_share_of_absolute_contribution,0.43733692224578274,7.768167691142323,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,universe_unique_stock_count,56,56,ok,attribution coverage
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,attributed_stock_count,56,56,ok,attribution coverage
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,never_eligible_in_headline_count,0,56,ok,attribution coverage
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,concentration,never_eligible_in_headline_codes,,56,ok,attribution coverage
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,largest_negative_stock_code,002410,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,largest_negative_stock_contribution,-0.020195309184283704,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,largest_positive_stock_code,300857,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,largest_positive_stock_contribution,0.016720293921660946,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,theme_contribution_AI,-0.33674365614368235,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,theme_contribution_AI|商业航天,-0.010186353475098737,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,theme_contribution_商业航天,-0.030634044651489823,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,000300_benchmark_return,-0.17897376573163237,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,000300_portfolio_active_return,-0.18452818075651556,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,000852_benchmark_return,-0.3175839631299806,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,000852_portfolio_active_return,-0.045917983358167325,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,399006_benchmark_return,-0.29840766059027757,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,399006_portfolio_active_return,-0.06509428589787036,,ok,
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,drawdown,transaction_cost_terminal_return_impact,0.00033638390699131104,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,peak_date,2023-06-21 00:00:00,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,peak_nav,1.564807883643307,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,trough_date,2024-09-12 00:00:00,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,trough_nav,0.9959971720589652,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,recovery_date,2024-12-16 00:00:00,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,period_endpoint_drawdown,-0.36350194648814815,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,drawdown_duration_periods,15,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,peak_to_trough_stock_contribution_sum,-0.37756405427027095,,ok,Arithmetic sum; it is not expected to equal compounded period_endpoint_drawdown.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,peak_to_trough_linked_contribution_sum,-0.36350194648814815,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,drawdown,peak_to_trough_compounded_gross_return,-0.36350194648814826,,ok,
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,leave_one_out,excluded_stock_code,300339,,ok,leave_one_out_counterfactual=true; ex-post sensitivity only.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,leave_one_out,original_terminal_nav,2.179340549136288,,ok,leave_one_out_counterfactual=true; ex-post sensitivity only.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,leave_one_out,counterfactual_terminal_nav,2.0816977151887013,,ok,leave_one_out_counterfactual=true; ex-post sensitivity only.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,leave_one_out,terminal_nav_difference,-0.09764283394758655,,ok,leave_one_out_counterfactual=true; ex-post sensitivity only.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,leave_one_out,counterfactual_cumulative_return,1.0816977151887013,,ok,leave_one_out_counterfactual=true; ex-post sensitivity only.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,leave_one_out,counterfactual_period_endpoint_drawdown,-0.3669445300650287,,ok,leave_one_out_counterfactual=true; ex-post sensitivity only.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,leave_one_out,invalid_period_count,0,,ok,leave_one_out_counterfactual=true; ex-post sensitivity only.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_relative_wealth,1.4168850209433006,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_arithmetic_active_return_sum,1.139478580847633,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_cumulative_return_difference,1.2776259329044832,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_positive_active_period_ratio,0.5263157894736842,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_negative_active_period_ratio,0.47368421052631576,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_tracking_error,0.2979834331508173,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_information_ratio,0.8452977947828666,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_best_active_period_1,0.25992680652235917,,ok,2024-09-12 to 2024-10-21
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_best_active_period_2,0.2219633466750445,,ok,2025-01-14 to 2025-02-19
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_best_active_period_3,0.181538577703672,,ok,2023-02-23 to 2023-03-23
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_best_active_period_4,0.1624024562538302,,ok,2024-02-21 to 2024-03-20
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_best_active_period_5,0.147183908588473,,ok,2023-10-23 to 2023-11-20
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_worst_active_period_1,-0.1414921006002109,,ok,2024-03-20 to 2024-04-19
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_worst_active_period_2,-0.1404683732501252,,ok,2022-03-28 to 2022-04-27
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_worst_active_period_3,-0.13043045427639288,,ok,2024-01-16 to 2024-02-21
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_worst_active_period_4,-0.1034937228749554,,ok,2023-12-18 to 2024-01-16
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000300_worst_active_period_5,-0.09976195856341841,,ok,2023-06-21 to 2023-07-21
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_relative_wealth,0.8757439850285607,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_arithmetic_active_return_sum,0.7997087257500898,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_cumulative_return_difference,1.0174866039652453,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_positive_active_period_ratio,0.5614035087719298,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_negative_active_period_ratio,0.43859649122807015,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_tracking_error,0.1967405169310886,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_information_ratio,0.8985323464694523,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_best_active_period_1,0.18888914924010408,,ok,2024-09-12 to 2024-10-21
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_best_active_period_2,0.17986723694874818,,ok,2023-02-23 to 2023-03-23
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_best_active_period_3,0.1711054623240392,,ok,2025-01-14 to 2025-02-19
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_best_active_period_4,0.1355647990655837,,ok,2023-05-24 to 2023-06-21
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_best_active_period_5,0.08414017432465441,,ok,2024-02-21 to 2024-03-20
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_worst_active_period_1,-0.0882158247895221,,ok,2023-06-21 to 2023-07-21
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_worst_active_period_2,-0.08393000732133139,,ok,2024-03-20 to 2024-04-19
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_worst_active_period_3,-0.0591299326572627,,ok,2022-01-24 to 2022-02-28
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_worst_active_period_4,-0.057835521250540096,,ok,2023-12-18 to 2024-01-16
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,000852_worst_active_period_5,-0.045187772265308804,,ok,2025-03-19 to 2025-04-17
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_relative_wealth,0.900233243287845,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_arithmetic_active_return_sum,0.7573802231371156,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_cumulative_return_difference,1.0324599981121827,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_positive_active_period_ratio,0.543859649122807,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_negative_active_period_ratio,0.45614035087719296,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_tracking_error,0.25429112692896844,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_information_ratio,0.6583827499300664,,ok,Active return is arithmetic; cumulative relative performance uses relative wealth.
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_best_active_period_1,0.2048991337618461,,ok,2023-02-23 to 2023-03-23
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_best_active_period_2,0.18042263095261502,,ok,2025-01-14 to 2025-02-19
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_best_active_period_3,0.1558585216271799,,ok,2023-05-24 to 2023-06-21
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_best_active_period_4,0.11831104930293121,,ok,2023-01-19 to 2023-02-23
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_best_active_period_5,0.1150695574640754,,ok,2024-11-18 to 2024-12-16
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_worst_active_period_1,-0.13183669096270262,,ok,2025-08-13 to 2025-09-10
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_worst_active_period_2,-0.10970927858642221,,ok,2021-03-31 to 2021-04-29
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_worst_active_period_3,-0.09524850243337489,,ok,2022-05-30 to 2022-06-28
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_worst_active_period_4,-0.0886355853277141,,ok,2023-06-21 to 2023-07-21
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,benchmark,399006_worst_active_period_5,-0.0833160345324344,,ok,2024-01-16 to 2024-02-21
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,cost,gross_cumulative_return,1.1793405491362878,,ok,
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,cost,net_cumulative_return_cost_0,1.1793405491362878,,ok,
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,cost,net_cumulative_return_cost_0.001,1.17208946717611,,ok,
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,cost,arithmetic_cost_sum,0.0033491203515727433,,ok,
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,cost,compounded_terminal_nav_difference,0.007251081960177874,,ok,
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,cost,average_turnover,0.058756497396013,,ok,
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,cost,highest_turnover,1.0,,ok,Highest turnover period starts 2021-03-31.
+research_universe_v1_2__cost_0.001,research_universe_v1_2,0.001,cost,cost_impact_as_share_of_gross_return,0.006148420797952161,,ok,

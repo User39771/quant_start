@@ -1,0 +1,6 @@
+﻿metric,value,status,sample_basis,research_only,primary_factor,primary_lookback_trading_days,forward_horizon_trading_days,signal_construction_point_in_time,universe_point_in_time,current_universe_historical_research,formal_performance_conclusion_allowed,execution_sim_ready,no_investment_conclusion
+historical_validation_mean_rank_ic,-0.12644745936399354,ok,mom60_primary_sample,True,MOM60,60,20,True,False,True,False,False,True
+historical_validation_mean_q5_q1,-0.03688790577648458,ok,mom60_primary_sample,True,MOM60,60,20,True,False,True,False,False,True
+auxiliary_pass_count,0,ok,mom60_primary_sample,True,MOM60,60,20,True,False,True,False,False,True
+leave_best_period_mean_q5_q1,-0.04167197392583228,ok,mom60_primary_sample,True,MOM60,60,20,True,False,True,False,False,True
+verdict,not_supported,ok,mom60_primary_sample,True,MOM60,60,20,True,False,True,False,False,True

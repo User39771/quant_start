@@ -1,0 +1,4 @@
+﻿scenario_id,universe_name,transaction_cost,theme,arithmetic_contribution_sum,linked_gross_contribution,contribution_rank
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,AI,0.17114889294265145,0.14693754124927264,1
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,AI|商业航天,0.02034370057973388,0.01957327826499665,2
+research_universe_v1_2__cost_0,research_universe_v1_2,0.0,商业航天,0.024604538368881115,0.01664541631293203,3
