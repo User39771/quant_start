@@ -1,127 +1,134 @@
-# A股现金流与主力资金因子拆解
+# quant_start：A 股主题股票池与冻结样本研究
 
-这个项目把截图里的两个诊股信号拆成可检验的量化因子：
+这是一个面向导师审阅的、可追溯的 A 股量化研究项目。它把主题股票池、复权价格、基准组合、因子检验与后续诊断放在同一条可复核的数据链上；研究输出是描述性证据与预注册规则的检验，不构成选股、择时、仓位或交易建议。
 
-- `cashflow_quality_score`：现金流造血质量，分数越高越好。
-- `main_moneyflow_score`：主力资金流强度，分数越高代表主力净流入越强。
+## 当前研究边界
 
-第一版默认使用 AkShare，不依赖 Tushare。目标是做因子可靠性检验，而不是直接生成交易策略。
+- **冻结股票池**：56 只股票，冻结日为 `2026-07-11`。
+- **冻结文件**：`data/processed/research_universe_lowvol_freeze_20260711.csv`。
+- **冻结文件 SHA-256**：`a8c2803802f1927176fdf7940aa187b551fdc6d03037876c1c5d9d297780e626`。
+- **主题标签**：44 只仅 AI、11 只仅商业航天、1 只双主题（`002049` 紫光国微）；按 50/50 分数归属时，AI/商业航天主题权重分别为 44.5/11.5。
+- **期间口径**：LOWVOL 与其可比研究使用 57 个锁定期间。Hypothesis 3 因首期 amount 窗口覆盖不足，使用 56 期共同样本。
+- **重要限制**：股票池是被冻结的研究集合，而不是历史时点的成分股快照；不对缺失价格、停牌日或不完整窗口进行插补。
 
-## 快速开始
+## 项目全流程
 
-先跑离线单元测试：
+| 阶段 | 工作内容 | 主要输入/输出 |
+| --- | --- | --- |
+| 1. 主题候选与业务核验 | 汇总主题候选股，结合人工业务证据、规则例外和风险标记，形成可审计的研究池。 | `data/stockPool/`、`data/manual/`、主题业务复核 CSV |
+| 2. 冻结股票池 | 将通过复核的股票、主题、证据字段和来源哈希固定；双主题股票按唯一代码合并。 | `research_universe_lowvol_freeze_20260711.csv`、`reports/lowvol20_freeze_manifest_v1_5.csv` |
+| 3. 价格与基准数据 | 校验 qfq 复权价格、市场日历、端点可用性和价格主键；使用沪深 300 等基准的有效市场日。 | `adjusted_price_panel_v1_5.csv`、`hybrid_benchmark_panel_v1_5.csv`、QA 报告 |
+| 4. 基准组合 | 在锁定调仓边界上构建冻结股票池等权基准，记录收益、换手、风险和缺失处理。 | `reports/adjusted_stock_pool_baseline_*`、`reports/baseline_attribution_*` |
+| 5. 因子研究 | 以冻结 factor panel 检验 MOM60 与 LOWVOL20；保留每期分组、收益、风险、稳定性和 QA 证据。 | `data/processed/*factor_panel*`、`reports/factor_*` |
+| 6. LOWVOL20 冻结与维护 | LOWVOL20 锁定后进行身份、结构和复现检查；匹配冻结身份时走 no-op 维护路径，不重建或替换产物。 | `reports/lowvol_locked_grid_prototype_*`、freeze/maintenance/prospective 文档 |
+| 7. Hypothesis 3：流动性过滤 | 以流动性过滤本身为主比较：未过滤等权 vs 流动性过滤等权；LOWVOL Q5 的过滤交互仅为次级分析。 | `reports/liquidity_filter_*`、`scripts/test_liquidity_filter_hypothesis_v1_6.py` |
+| 8. Hypothesis 4A：主题广度诊断 | 用信号日 Breadth60 对随后锁定期间的基准收益和回撤风险做描述性市场状态诊断，不生成交易规则。 | `scripts/run_theme_breadth_diagnostic_v1_7.py`、`reports/theme_breadth_*` |
+| 9. 商业航天事件研究 | 对长征十号乙海上回收事件做固定窗口的日频描述性事件研究；T+5 不可用时停止，不扩展为新闻、预测或策略模块。 | `scripts/run_changzheng10_event_study.py`、`reports/event_study/changzheng10_recovery/` |
+
+## 研究原则与复核规则
+
+1. **先冻结、后比较**：股票池、期间键、成本情景和已冻结的 LOWVOL 产物不得由后续研究回写。
+2. **无前视与无填补**：信号只使用信号日及之前的精确市场日；端点或窗口缺失会显式标记为无效。
+3. **等权、可重算**：正式组合遵循固定成员、等权归一化、漂移后换手和既定缺价处理；端点收益与正式产物对账。
+4. **区分描述与因果**：行业、主题构成、事件窗口和组合交互只作为暴露或机制证据，不作严格因果收益归因。
+5. **结论有边界**：Hypothesis 3 使用 `supported_for_implementability`、`mixed`、`not_supported`；4A 使用 `diagnostically_supported`、`mixed`、`not_supported`；事件研究仅使用描述性解释类别。
+
+## 目录导览
+
+```text
+data/
+  processed/     冻结股票池、复权价格、基准与因子面板
+  manual/        人工业务证据和概念映射
+  stockPool/     股票池构建规则、审计表与候选记录
+reports/         研究报告、期间表、汇总表、QA 与冻结清单
+scripts/         可复现研究与诊断脚本
+src/aq_factor_lab/
+  data_layer/    AkShare 数据读取、缓存、规范化和质量检查
+  data_collection/  有边界的主题数据采集工具
+tests/           脚本与数据契约的单元测试
+```
+
+`data_layer` 和 `data_collection` 只提供数据基础设施，不实现因子排序、策略或回测。所有主题研究都应优先复用冻结面板和已有报告，而不是静默刷新历史数据。
+
+## 复现与检查
+
+在项目根目录使用现有 Python 环境：
 
 ```powershell
 python -m unittest discover -s tests
+python -m ruff check scripts tests src
 ```
 
-再跑一个小样本真实数据烟测：
+仅在需要复核相应模块时运行其专用脚本；不要把通用数据抓取或 `run_research.py` 当作冻结研究的重建命令。以下文件必须保持只读：冻结 universe、调整后价格面板、LOWVOL 正式 periods/summary，以及 MOM60、LOWVOL20、Hypothesis 3 的既有结论产物。
 
-```powershell
-python scripts/run_research.py --max-symbols 10 --years 1
-```
+## 冻结的 56 只股票
 
-如果全市场列表接口网络不稳定，可以直接指定股票：
+下表直接来自冻结股票池。`AI|商业航天` 表示同一股票同时属于两个主题；在主题加权诊断中按 50/50 处理，但在任何单个组合中只保留一次。
 
-```powershell
-python scripts/run_research.py --symbols 600519,000001,300750 --years 1
-```
+| 代码 | 名称 | 冻结主题 |
+| --- | --- | --- |
+| 000063 | 中兴通讯 | AI |
+| 000681 | 视觉中国 | AI |
+| 000901 | 航天科技 | 商业航天 |
+| 000938 | 紫光股份 | AI |
+| 000977 | 浪潮信息 | AI |
+| 001208 | 华菱线缆 | 商业航天 |
+| 002015 | 协鑫能科 | AI |
+| 002044 | 美年健康 | AI |
+| 002049 | 紫光国微 | AI\|商业航天 |
+| 002065 | 东华软件 | AI |
+| 002131 | 利欧股份 | AI |
+| 002212 | 天融信 | AI |
+| 002230 | 科大讯飞 | AI |
+| 002236 | 大华股份 | AI |
+| 002279 | 久其软件 | AI |
+| 002315 | 焦点科技 | AI |
+| 002361 | 神剑股份 | 商业航天 |
+| 002373 | 千方科技 | AI |
+| 002396 | 星网锐捷 | AI |
+| 002410 | 广联达 | AI |
+| 002446 | 盛路通信 | 商业航天 |
+| 002544 | 普天科技 | 商业航天 |
+| 002558 | 巨人网络 | AI |
+| 002757 | 南兴股份 | AI |
+| 002792 | 通宇通讯 | 商业航天 |
+| 002881 | 美格智能 | AI |
+| 002929 | 润建股份 | AI |
+| 002935 | 天奥电子 | 商业航天 |
+| 002987 | 京北方 | AI |
+| 300002 | 神州泰岳 | AI |
+| 300017 | 网宿科技 | AI |
+| 300033 | 同花顺 | AI |
+| 300047 | 天源迪科 | AI |
+| 300058 | 蓝色光标 | AI |
+| 300101 | 振芯科技 | 商业航天 |
+| 300113 | 顺网科技 | AI |
+| 300133 | 华策影视 | AI |
+| 300170 | 汉得信息 | AI |
+| 300182 | 捷成股份 | AI |
+| 300339 | 润和软件 | AI |
+| 300348 | 长亮科技 | AI |
+| 300378 | 鼎捷数智 | AI |
+| 300413 | 芒果超媒 | AI |
+| 300454 | 深信服 | AI |
+| 300458 | 全志科技 | AI |
+| 300496 | 中科创达 | AI |
+| 300627 | 华测导航 | 商业航天 |
+| 300629 | 新劲刚 | 商业航天 |
+| 300634 | 彩讯股份 | AI |
+| 300674 | 宇信科技 | AI |
+| 300857 | 协创数据 | AI |
+| 300996 | 普联软件 | AI |
+| 301050 | 雷电微力 | 商业航天 |
+| 301110 | 青木科技 | AI |
+| 301165 | 锐捷网络 | AI |
+| 301171 | 易点天下 | AI |
 
-正式跑近 3 年沪深 A 股：
+## 面向导师审阅的入口
 
-```powershell
-python scripts/run_research.py --years 3
-```
+- 研究范围与库存：`reports/project_inventory_for_backtest.md`、`reports/project_structure_for_v1_3.md`。
+- LOWVOL20 冻结与维护：`reports/lowvol20_freeze_manifest_v1_5.csv`、`reports/lowvol20_maintenance_mode_v1_5_1.md`。
+- 股票池来源与业务证据：`data/stockPool/`、`theme_business_review_completed_001_200.csv`。
+- 事件研究数据状态：`reports/event_study/changzheng10_recovery/event_data_manifest.csv`。
 
-输出文件会写入：
-
-- `data/cache/`：AkShare 原始数据缓存。
-- `data/processed/`：因子面板与检验表。
-- `reports/`：Markdown 报告和图片。
-
-## 重要说明
-
-- AkShare 的个股主力资金流接口通常只能取到较短历史。代码会如实报告覆盖率，不会把短历史伪装成 3 年长期结果。
-- 个股财报接口不一定提供精确公告日。若缺少公告日，代码保守使用“报告期后 120 天”作为可用日期，避免未来函数。
-- 全市场运行会请求大量网页接口，建议先用 `--max-symbols 10` 确认环境可跑，再放大全样本。
-
-## Public Data Layer
-
-The standalone public-data layer lives under `aq_factor_lab.data_layer`. It is infrastructure only: it does not implement factors, rankings, strategies, or backtests.
-
-Public functions:
-
-```python
-from aq_factor_lab.data_layer import (
-    get_concept_members,
-    get_daily_price,
-    get_index_price,
-    get_stock_universe,
-)
-```
-
-Daily stock prices use deterministic exact-query cache files. If an exact cleaned cache exists, it is returned without silently refreshing qfq data. For A-share daily prices, `adjusted=True` means qfq / 前复权 and calls AkShare `stock_zh_a_hist(..., adjust="qfq")`; `adjusted=False` calls the same endpoint with `adjust=""`.
-V1 does not implement TTL refresh, forced refresh, stale fallback, or partial-range cache merging; `allow_stale_cache` is reserved for future behavior.
-
-Normalized price outputs use primary downstream columns `open`, `high`, `low`, and `close`. AkShare daily stock `成交量` is reported in 手/lots; the data layer converts `volume` to shares by multiplying by `100`. `amount` remains CNY/yuan. Index prices follow the same OHLCV convention and always use `adjusted=False`.
-
-Universe and concept membership are marked with `asof_quality="current_snapshot"` in v1. AkShare does not provide point-in-time historical membership through these snapshot endpoints, so downstream research must not treat a requested historical date as true historical universe or concept membership.
-
-Minimal live smoke test:
-
-```powershell
-$env:PYTHONPATH='src'; python scripts/smoke_test_data_layer.py
-```
-
-The smoke test requests only one small stock daily-price query, then repeats the same query to show exact clean-cache reuse. It does not download broad market data.
-
-## Thematic Data Collection
-
-`aq_factor_lab.data_collection` orchestrates bounded thematic research datasets on top of the
-cache-first `data_layer`. It is still infrastructure only: it does not calculate factors, rankings,
-signals, strategies, or backtests.
-
-The collector accepts a small config with theme name, concept names, date range, optional benchmark
-indices, and a `max_symbols` cap. It collects concept snapshots, optional current universe metadata,
-daily OHLCV prices, index OHLCV prices, a manifest, and failures under:
-
-```text
-data/collected/thematic/<theme_name>/<run_id>/
-```
-
-Concept and universe membership remain `current_snapshot` in v1. A requested historical date is not
-point-in-time historical membership, and the manifest records this caveat.
-
-Small manual dry run:
-
-```powershell
-$env:PYTHONPATH='src'; python scripts/collect_thematic_data.py --config configs/thematic_data_sample.json --dry-run --max-symbols 2
-```
-
-# Files
-
-- `codex_handoff_prompt.md`
-  - Main prompt to paste into Codex.
-  - It instructs Codex to use subagents, merge outputs, validate labels, and create the final review files.
-
-- `theme_business_review_remaining_rows_061_200.csv`
-  - The 140 rows still needing review.
-  - Codex should fill these rows.
-
-- `theme_business_review_seed_rows_001_060.csv`
-  - The already-reviewed first 60 rows.
-  - Codex should use this as labeling reference and preserve it in the final 200-row output.
-
-## Suggested Codex Usage
-
-1. Start a new Codex task in the same project/workspace.
-2. Attach the three files above.
-3. Paste the full contents of `codex_handoff_prompt.md`.
-4. Ask Codex to execute the task end-to-end.
-5. Check the final `manual_decision_required.csv` first.
-
-## Important
-
-Do not ask Codex to directly modify your original manual profile file.
-It should create new output files first, then you can decide whether to replace or merge them into your project.
-
+任何新增研究应新建版本化脚本与报告，不修改冻结输入或既有结论；需要重新选择股票、改变阈值、变更窗口或启动新的治理流程时，应先单独审批。
