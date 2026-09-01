@@ -4,3 +4,4 @@ matplotlib
 scipy
 akshare
 psycopg[binary]
+arch==8.0.0

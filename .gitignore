@@ -2,12 +2,19 @@
 .env
 .env.*
 !.env.example
+*.key
+*.pem
+auth.json
+credentials*
+token*
+secrets*
 
 # Python caches and local tooling
 .codex/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.ipynb_checkpoints/
 .ruff_cache/
 .mypy_cache/
 .coverage
@@ -43,22 +50,12 @@ data/processed/db_sync_runs/
 Thumbs.db
 .vscode/
 .idea/
-# Python
-__pycache__/
-*.pyc
-.ruff_cache/
-
-# Environment
-.env
-
-# IDE
-.vscode/
-.idea/
-
-# Data
-data/cache/
-data/raw/
+# Additional generated datasets: selected small research-result CSVs remain trackable
 data/processed/*.csv
+data/probe/
+data/sandbox/
+data/stockPool/annual_report_cache/
+data/processed/h5a_broader_a_daily_v1/
 
 # Reports generated outputs
 reports/prospective/
@@ -69,3 +66,13 @@ reports/recovery/
 
 # Temporary
 *.tmp
+tmp/
+output/
+
+# Literature full text: keep local unless a source license explicitly permits redistribution
+docs/literature_reconnaissance/papers/source_pdfs/
+docs/literature_reconnaissance/papers/readers/*/extracted/paper_original.md
+private_work_packets/
+docs/literature_reconnaissance/papers/readers/*/analysis/work_review_notes_*.md
+docs/literature_reconnaissance/papers/readers/*/paper_reader_*.md
+!docs/literature_reconnaissance/papers/readers/*/paper_reader_*_draft.md

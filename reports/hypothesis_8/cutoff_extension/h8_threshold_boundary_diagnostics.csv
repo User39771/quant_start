@@ -1,0 +1,5 @@
+﻿threshold,old_boundary_low,old_boundary_high,stocks,crossed_upward,crossed_downward,unchanged_side
+750,700,800,112,15,0,97
+1000,950,1050,55,11,0,44
+1250,1200,1300,22,4,0,18
+1500,1450,1550,122,0,0,122

@@ -1,0 +1,9 @@
+﻿candidate,field_or_formula,path,unit,stock_coverage,date_min,date_max,missing_rate,signal_time_legal,network_download_needed,notes
+daily_share_volume,volume,canonical broader-A raw cache,shares; unit unavailable,0,,,1.0,False,True,No canonical broader-A volume field; five legacy public-clean files are insufficient
+daily_amount,amount,data/cache/price/*.csv,CNY inferred; not source-certified,5193,2020-01-02 00:00:00,2026-06-16 00:00:00,0.00017892769074523418,True,False,Direct trading-value field used by existing AMOUNT_MEAN20
+daily_total_market_cap,total_market_cap,data/cache/price/*.csv,CNY inferred; not source-certified,5193,2020-01-02 00:00:00,2026-06-16 00:00:00,0.00016492606981333147,True,False,Daily historical dated; vintage lineage not audited
+daily_value_turnover,amount / total_market_cap,constructed from data/cache/price/*.csv,dimensionless,5193,2020-01-02 00:00:00,2026-06-16 00:00:00,,True,False,Turnover-like; not D04 firm-specific volume or true turnover
+market_total_amount,sum(amount),cross-sectional aggregate of canonical broader-A raw cache,CNY inferred,5148,2021-02-10 00:00:00,2025-11-12 00:00:00,,True,False,"Participant count median=4887, minimum=68; early history limitation retained"
+market_total_volume,sum(volume),unavailable,shares,0,,,1.0,False,True,Cannot construct without broad daily share volume
+formation_day_qfq_return,qfq_close_t / qfq_close_t-1 - 1,data/processed/h5a_broader_a_daily_v1/*.csv,decimal return,5180,2020-12-28,2026-06-16,,True,False,Signal-time QFQ closes support a future normal-formation-return robustness audit
+price_limit_and_trade_status,limit/ST/tradability fields,unavailable; raw cache has OHLC only,status,0,,,1.0,False,True,"OHLC cannot certify limit status, ST status or next-day tradability"

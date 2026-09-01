@@ -1,6 +1,32 @@
-# quant_start：A 股主题股票池与冻结样本研究
+# quant_start：A 股中频量化研究（H5–H8）
 
-这是一个面向导师审阅的、可追溯的 A 股量化研究项目。它把主题股票池、复权价格、基准组合、因子检验与后续诊断放在同一条可复核的数据链上；研究输出是描述性证据与预注册规则的检验，不构成选股、择时、仓位或交易建议。
+这是一个面向导师审阅的 A 股中频量化研究项目。项目重点不是发布实盘交易系统，而是展示从研究问题、数据合同、预注册、实现、诊断到停止决策的完整证据链。所有结果均为历史样本内的研究证据，不构成投资建议、稳定 Alpha、因果机制或样本外有效性声明。
+
+## 当前研究阶段
+
+H5–H8 已完成。当前工作是回到文献，选择和精读下一篇论文；是否形成 H9 尚未决定。选择下一问题前，会先检查相关文献与新颖性，再决定是否值得开展大规模数据和实证工作。
+
+导师建议先阅读 [H5–H8 研究进展](docs/research_progress_h5_h8.md)，再进入各 hypothesis 的预注册、正式报告和脚本。
+
+## H5–H8 概览
+
+| Hypothesis | 文献启发 | 研究问题 | 主要结果 | 最终解释 |
+| --- | --- | --- | --- | --- |
+| H5 | Lee & Swaminathan (2000) | past return × trading activity 是否对应后续 continuation/reversal 路径？ | H5A 的 raw amount 排序产生 6/6 稳定主对比，但该 proxy 与规模等暴露显著相关；更接近 turnover 的 H5B VT20 与 H5A 仅 7/9 同方向，绝对幅度只保留约 4%–19%。 | paper-like pattern 可见，但 turnover mechanism 的 construct validity 不稳健，不能称为 Alpha 或因果效应。 |
+| H6 | Gervais, Kaniel & Mingelgrin (2001) | 个股自身历史中的异常日成交额，是否对应后续 5/10/20 日收益路径？ | 20D HIGH_SHOCK−LOW_SHOCK 在 LOW/MID/HIGH_RETURN 均为负，市场归一化后方向保留；局部趋势与样本限制仍是重要替代解释。 | 历史样本中存在较稳定的负向 abnormal-activity association，但 mechanism unresolved。 |
+| H7 | Llorente et al. (2002) | turnover 是否改变个股动态 return relation，并呈现规模异质性？ | Primary 4,470 只股票的 C2 中位数为负，2D/5D、替代 turnover 口径和长历史样本方向大体延续；规模分组与截面回归显示明显异质性。 | 这是历史样本内的现象诊断。后续文献复核显示增量新颖性不足，项目停止继续扩展，并形成“先做 novelty check”的流程教训。 |
+| H8 | Yao & Yang (2026) | 在可行的数据边界内，T+1 sign-asymmetric return-reversal 机制能否作 stock-level adapted replication？ | 474 只 Primary 股票的全样本 close-to-close 差异方向不支持完整复现；intraday−overnight timing contrast 为负，大盘 quintiles 的差异也转为负。 | 只能表述为 partial / heterogeneous replication evidence：部分 timing 与大盘股结果与论文预测一致，不能包装为完整复现、因果机制或稳定 Alpha。 |
+
+## 研究逻辑的演进
+
+```text
+H5  paper-like pattern -> proxy / construct-validity problem
+H6  empirical association -> mechanism unresolved
+H7  cross-sectional heterogeneity -> novelty problem
+H8  mechanism-oriented replication -> partial large-cap evidence
+```
+
+研究标准因此从“是否出现显著或好看的结果”逐步转向：construct validity、confounding、literature novelty、mechanism identification、robustness，以及尚未打开的 OOS/prospective evidence。
 
 ## 当前研究边界
 
@@ -24,6 +50,21 @@
 | 7. Hypothesis 3：流动性过滤 | 以流动性过滤本身为主比较：未过滤等权 vs 流动性过滤等权；LOWVOL Q5 的过滤交互仅为次级分析。 | `reports/liquidity_filter_*`、`scripts/test_liquidity_filter_hypothesis_v1_6.py` |
 | 8. Hypothesis 4A：主题广度诊断 | 用信号日 Breadth60 对随后锁定期间的基准收益和回撤风险做描述性市场状态诊断，不生成交易规则。 | `scripts/run_theme_breadth_diagnostic_v1_7.py`、`reports/theme_breadth_*` |
 | 9. 商业航天事件研究 | 对长征十号乙海上回收事件做固定窗口的日频描述性事件研究；T+5 不可用时停止，不扩展为新闻、预测或策略模块。 | `scripts/run_changzheng10_event_study.py`、`reports/event_study/changzheng10_recovery/` |
+| 10. H5：交易活动与反转路径 | 在 broader-A 历史样本中固定 RETURN60、activity state 与 20/60/120D 路径；随后审计 raw amount 的规模/波动暴露，并以 VT20 作最小 construct check。 | `reports/hypothesis_5a/`、`reports/hypothesis_5b/` |
+| 11. H6：异常交易活动 | 用个股自身 50 日 amount 历史定义 shock，继承 H5 RETURN_STATE，比较后续 5/10/20D 路径。 | `reports/hypothesis_6/` |
+| 12. H7：动态量价关系 | 构建并审计 turnover 数据，以个股回归检验动态 volume-return relation、期限稳健性和规模异质性。 | `reports/hypothesis_7/` |
+| 13. H8：T+1 机制适配复现 | 先解决样本、公司行动、收益分解和 GARCH 合同，再执行 stock-level adapted replication。 | `reports/hypothesis_8/` |
+
+## MCTS 的位置
+
+MCTS 不是当前项目的核心研究结论。已有 v0/v1 仅是 `historical_seen` 搜索机制 sandbox，用来检查表达式重复、信息等价与 MCTS/Random Search 的搜索效率；两轮均未观察到合同要求下的稳定 MCTS search-efficiency advantage，也不允许 Alpha 或 OOS claim。当前更合理的顺序是先从论文提取 economically meaningful primitives，完成数据与实证验证，再决定是否有必要搜索这些 primitives 的组合。
+
+## 主要文献
+
+- Lee, C. M. C. & Swaminathan, B. (2000). “Price Momentum and Trading Volume.” *The Journal of Finance*, 55(5), 2017–2069. [DOI](https://doi.org/10.1111/0022-1082.00280)
+- Gervais, S., Kaniel, R. & Mingelgrin, D. H. (2001). “The High-Volume Return Premium.” *The Journal of Finance*, 56(3), 877–919. [DOI](https://doi.org/10.1111/0022-1082.00349)
+- Llorente, G., Michaely, R., Saar, G. & Wang, J. (2002). “Dynamic Volume-Return Relation of Individual Stocks.” *Review of Financial Studies*, 15(4), 1005–1047. [DOI](https://doi.org/10.1093/rfs/15.4.1005)
+- Yao, J. & Yang, Y. (2026). “Positive feedback trading, the T+1 rule, and asymmetric return reversals in China.” *Economic Modelling*, 164, 107783.
 
 ## 研究原则与复核规则
 
@@ -126,6 +167,11 @@ python -m ruff check scripts tests src
 
 ## 面向导师审阅的入口
 
+- H5–H8 总览与研究演进：`docs/research_progress_h5_h8.md`。
+- H5：`reports/hypothesis_5a/h5a_preregistration_and_implementation_plan.md`、`reports/hypothesis_5a/h5a_diagnostic_report.md`、`reports/hypothesis_5b/h5b_diagnostic_report.md`。
+- H6：`reports/hypothesis_6/h6_daily_amount_preregistration.md`、`reports/hypothesis_6/h6_diagnostic_report.md`。
+- H7：`reports/hypothesis_7/h7_dynamic_volume_return_preregistration_v1.md`、`reports/hypothesis_7/h7_dynamic_volume_return_report_v1.md`。
+- H8：`reports/hypothesis_8/h8_preregistration_v1.md`、`reports/hypothesis_8/h8_report_v1.md`。
 - 研究范围与库存：`reports/project_inventory_for_backtest.md`、`reports/project_structure_for_v1_3.md`。
 - LOWVOL20 冻结与维护：`reports/lowvol20_freeze_manifest_v1_5.csv`、`reports/lowvol20_maintenance_mode_v1_5_1.md`。
 - 股票池来源与业务证据：`data/stockPool/`、`theme_business_review_completed_001_200.csv`。

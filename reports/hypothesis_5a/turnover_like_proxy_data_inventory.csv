@@ -1,0 +1,8 @@
+﻿field,available,daily,stock_coverage,date_min,date_max,unit,signal_time_legal,time_status,used_in_primary_proxy,source,notes
+daily_amount,True,True,5193,2020-01-02 00:00:00,2026-06-16 00:00:00,CNY_INFERRED_NOT_SOURCE_CERTIFIED,True,DAILY_HISTORICAL,True,data/cache/price/*.csv,Canonical AMOUNT_MEAN20 source; magnitudes and vendor-turnover consistency support CNY
+daily_total_market_cap,True,True,5193,2020-01-02 00:00:00,2026-06-16 00:00:00,CNY_INFERRED_NOT_SOURCE_CERTIFIED,True,DAILY_HISTORICAL_MARKET_CAP;HISTORICAL_DATED_NOT_VINTAGE_AUDITED,True,data/cache/price/*.csv,Daily dated and time-varying; share/effective-date and vendor-vintage lineage not audited
+daily_circulating_market_cap,True,True,5193,2020-01-02 00:00:00,2026-06-16 00:00:00,CNY_INFERRED_NOT_SOURCE_CERTIFIED,True,DAILY_HISTORICAL_NOT_VINTAGE_AUDITED,False,data/cache/price/*.csv,Inventory only; fixed Primary denominator remains total market cap
+raw_daily_close,True,True,5193,2020-01-02 00:00:00,2026-06-16 00:00:00,CNY_PER_SHARE_INFERRED,True,DAILY_HISTORICAL,False,data/cache/price/*.csv,Used only for signal-time contamination and unit plausibility checks
+vendor_turnover,True,True,5193,2020-01-02 00:00:00,2026-06-16 00:00:00,DATABASE_NATIVE_UNDOCUMENTED_DENOMINATOR,True,DAILY_HISTORICAL_DENOMINATOR_UNRESOLVED,False,data/cache/price/*.csv,Not used; denominator and source contract are unresolved
+historical_total_shares_with_effective_dates,False,False,0,,,SHARES,False,SCHEMA_OR_ALGEBRAIC_INFERENCE_ONLY,False,data/cache/price/*.csv,No local effective/announcement/change-date history; current values cannot be mapped backward
+historical_free_float_shares,False,False,0,,,SHARES,False,UNAVAILABLE,False,data/cache/price/*.csv,No auditable local historical free-float share series

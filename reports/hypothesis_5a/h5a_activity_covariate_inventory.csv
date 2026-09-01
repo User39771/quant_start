@@ -1,0 +1,13 @@
+﻿covariate,available,signal_time_valid,point_in_time_status,source,definition,coverage,limitation
+AMOUNT_MEAN_20,True,True,HISTORICAL_SIGNAL_WINDOW,h5a signal feature panel,mean positive finite amount over exact 20 market dates,1.0,"Base proxy; mixes activity, size and price"
+ACTIVITY_PCT,True,True,HISTORICAL_SIGNAL_CROSS_SECTION,h5a signal feature panel,average percentile rank of AMOUNT_MEAN20 within signal-ready period,1.0,Report value; membership uses deterministic ordinal assignment
+RETURN_60,True,True,HISTORICAL_SIGNAL_WINDOW,h5a signal feature panel,QFQ endpoint return over exact 60 market-day interval ending at signal,1.0,Frozen H5A return state input
+signal_qfq_close,True,True,HISTORICAL_DATED_NOT_VINTAGE,canonical Sina QFQ cache,QFQ close on signal date,1.0,Absolute QFQ scale depends on adjustment base
+signal_raw_close,True,True,HISTORICAL_DATED_NOT_VINTAGE,local RAW daily cache,unadjusted close on signal date,1.0,Used only for price-level description
+VOL20,True,True,HISTORICAL_SIGNAL_WINDOW,canonical Sina QFQ; existing LOWVOL20 contract,annualized sample std of 20 exact daily returns ending at signal,0.9996268599887297,Requires 21 exact prices and existing flat-price reliability rule
+total_market_cap,True,True,HISTORICAL_DATED_NOT_VINTAGE_AUDITED,local RAW daily cache,vendor total_market_cap on signal date,0.9998438904034481,Date-varying history exists; share/effective-date lineage not independently audited
+circulating_market_cap,True,True,HISTORICAL_DATED_NOT_VINTAGE_AUDITED,local RAW daily cache,vendor circulating_market_cap on signal date,0.9998438904034481,Date-varying history exists; share/effective-date lineage not independently audited
+sw_industry,True,True,CURRENT_MAPPING_NOT_POINT_IN_TIME,theme_business_review_completed_001_200.csv,current reviewed SW industry label for mapped stocks,0.03849855630413859,Only 200 mapped codes; not representative of broader-A
+board,True,True,STATIC_CODE_DERIVED,stock_code,"SH Main, SZ Main, ChiNext or STAR from code prefix",1.0,Static descriptive category; not causal
+listing_age_at_signal,False,False,UNAVAILABLE,local project inventory,signal date minus verified listing date,0.0,No usable local listing-date table; no inference from first price date
+turnover,False,False,DENOMINATOR_LINEAGE_UNRESOLVED,local RAW daily cache,vendor turnover field,0.0,Not true audited point-in-time turnover; excluded
