@@ -22,6 +22,7 @@ htmlcov/
 
 # Virtual environments
 .venv/
+.venv_qlib_c0/
 venv/
 env/
 
@@ -60,6 +61,19 @@ data/processed/h5a_broader_a_daily_v1/
 # Reports generated outputs
 reports/prospective/
 reports/recovery/
+
+# High-volume generated research intermediates (keep summaries and frozen ledgers trackable)
+reports/robinhood_chain_phase0/**/sessions/
+reports/robinhood_chain_pilot/**/sessions/
+reports/robinhood_chain_pilot/**/*.sqlite3
+reports/alpha_jungle_c0/native_subagent_bridge/
+reports/hypothesis_5a/turnover_like_proxy_signal_values.csv
+reports/hypothesis_5b/h5b_vt20_signal_panel.csv
+reports/hypothesis_6/h6_signal_states.csv
+reports/mcts_sandbox_v1/candidate_registry.csv
+
+# Local source/reference drop zone; curated project artifacts belong under docs/ or reports/
+otherneeds/
 
 # Logs
 *.log

@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["suggestion", "formula"],
+  "properties": {
+    "suggestion": {"type": "string"},
+    "formula": {"type": "string"}
+  }
+}
